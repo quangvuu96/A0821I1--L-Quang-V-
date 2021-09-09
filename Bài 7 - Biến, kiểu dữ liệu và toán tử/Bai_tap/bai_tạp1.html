@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính điểm trung bình</title>
+</head>
+<body>
+<h1 style="text-align: center;padding: 20px;background-color: gray">Chương trình tính điểm trung bình</h1>
+<table>
+    <tr>
+        <td><h2>Nhập điểm vật lý:</h2></td>
+        <td><input id="diemly" type="text" name="diemly"></td>
+    </tr>
+    <tr>
+        <td><h2>Nhập điểm hóa học:</h2></td>
+        <td><input id="diemhoa" type="text" name="diemhoa"></td>
+    </tr>
+    <tr>
+        <td><h2>Nhập điểm sinh học:</h2></td>
+        <td><input id="diemsinh" type="text" name="diemsinh"></td>
+    </tr>
+    <tr>
+        <td><h2>Điểm trung bình:</h2></td>
+        <td><input  id="diemtb" type="text" name="diemtb"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="button" value="Tính điểm" onclick="showtrungbinh()"></td>
+    </tr>
+</table>
+<script>
+    function showtrungbinh(){
+        let vatly = document.getElementById('diemly').value;
+        let hoahoc = document.getElementById('diemhoa').value;
+        let sinhhoc = document.getElementById('diemsinh').value;
+        let trungbinh = (parseFloat(vatly) + parseFloat(hoahoc) + parseFloat(sinhhoc))/3 ;
+        document.getElementById('diemtb').value = trungbinh
+    }
+</script>
+</body>
+</html>

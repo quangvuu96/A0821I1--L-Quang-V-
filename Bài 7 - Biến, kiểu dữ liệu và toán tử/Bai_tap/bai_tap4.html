@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính chu vi hình tròn</title>
+</head>
+<body>
+<h1 style="text-align: center;background-color: gainsboro;padding: 30px">Tính chu vi hình tròn</h1>
+<table>
+    <tr>
+        <th>Nhập bán kính R: </th>
+        <th><input type="text" name="bankinh" placeholder="Nhập R" id="bankinh"></th>
+    </tr>
+    <tr>
+        <td>Chu vi hình tròn:</td>
+        <td><input type="text" name="chuvi" placeholder="Chu vi" id="chuvi"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="button" value="Tính toán" onclick="tinhtoan()"></td>
+    </tr>
+</table>
+<script>
+    function tinhtoan(){
+        let r = document.getElementById('bankinh').value;
+        const pi = 3.14159;
+        let v = pi*2*r;
+        document.getElementById('chuvi').value = v;
+    }
+</script>
+
+</body>
+</html>
