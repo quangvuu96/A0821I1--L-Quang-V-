@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sự kiện chuột</title>
+</head>
+<body>
+<form>
+    <img id="myImage"
+         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIdvQsah5RIvIvzAosBnZyy4InzmOJnXU5Cw&usqp=CAU"
+         alt="ball"/>
+    <p>Click button below to move the ball to right or left.</p>
+    <input type="button" value="Left" onclick="moveLeft()">
+    <input type="button" value="Right" onclick="moveRight()">
+    <script>
+        let imgObj = document.getElementById('myImage');
+
+        function init() {
+            imgObj = document.getElementById('myImage');
+            imgObj.style.position = 'relative';
+            imgObj.style.left = '0px';
+        }
+        function moveRight() {
+            imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px' ;
+        }
+        function moveLeft() {
+            imgObj.style.left = parseInt(imgObj.style.left) - 10 + 'px' ;
+        }
+        window.onload = init;
+    </script>
+</form>
+</body>
+</html>

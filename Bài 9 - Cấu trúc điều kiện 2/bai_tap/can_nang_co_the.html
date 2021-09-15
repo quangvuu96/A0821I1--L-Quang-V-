@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chỉ số cân nặng cơ thể</title>
+</head>
+<body>
+<h1 style="text-align: center;background-color: darkgray;color: gray;padding: 30px"> Chỉ số BMI</h1>
+<form>
+    <p><span>Nhập cân nặng :</span><input type="text" id="weight" placeholder="Kg"></p>
+    <p><span>Nhập chiều cao:</span><input type="text" id="height" placeholder="m"></p>
+    <p><input style="margin-left: 110px;width: 100px" type="button" value="Tính" onclick="calBMI()" ></p>
+    <p><span style="font-weight: 100;font-size: 20px">Chỉ số BMI:</span><span id="display"></span></p>
+</form>
+<script>
+    function calBMI() {
+        let weight = document.getElementById('weight').value;
+        let height = document.getElementById('height').value;
+        let bmi = weight / (height ^ 2);
+        if (bmi < 18) {
+            document.getElementById('display').innerText = " Underweight" ;
+        } else if (bmi < 25.0) {
+            document.getElementById('display').innerText = " Normal" ;
+        } else if (bmi < 30.0) {
+            document.getElementById('display').innerText = " Overweight" ;
+        } else {
+            document.getElementById('display').innerText = " Obese" ;
+        }
+    }
+
+</script>
+</body>
+</html>

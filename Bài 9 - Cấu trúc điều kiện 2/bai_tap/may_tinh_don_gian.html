@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        tr td button {
+            width: 50px;
+            height: 50px;
+        }
+        .butt {
+            background-color: gray;
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+<body>
+<h1 style="text-align: center ">Calculator</h1>
+<table style="margin: 0 auto"  border="1" cellspacing="10">
+    <tr>
+        <td colspan="4" style="height: 50px">
+            <span id="result"></span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="calBasic('7')">7</button>
+        </td>
+        <td>
+            <button onclick="calBasic('8')">8</button>
+        </td>
+        <td>
+            <button onclick="calBasic('9')">9</button>
+        </td>
+        <td>
+            <button class="butt" onclick="calBasic('/')">/</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="calBasic('4')">4</button>
+        </td>
+        <td>
+            <button onclick="calBasic('5')">5</button>
+        </td>
+        <td>
+            <button onclick="calBasic('6')">6</button>
+        </td>
+        <td>
+            <button class="butt" onclick="calBasic('*')">X</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="calBasic('1')">1</button>
+        </td>
+        <td>
+            <button onclick="calBasic('2')">2</button>
+        </td>
+        <td>
+            <button onclick="calBasic('3')">3</button>
+        </td>
+        <td>
+            <button class="butt" onclick="calBasic('-')">-</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="calBasic('0')">0</button>
+        </td>
+        <td>
+            <button class="butt" onclick="calBasic('C')">C</button>
+        </td>
+        <td>
+            <button class="butt" onclick="calBasic('=')">=</button>
+        </td>
+        <td>
+            <button class="butt" onclick="calBasic('+')">+</button>
+        </td>
+    </tr>
+</table>
+<script>
+    function calBasic(input) {
+        let result = document.getElementById("result").innerText;
+        switch (input) {
+            case '0':
+            case '1':
+            case '2':
+            case '3':
+            case '4':
+            case '5':
+            case '6':
+            case '7':
+            case '8':
+            case '9':
+            case '+':
+            case '-':
+                result = result + input;
+                break;
+            case '*':
+            case '/':
+                if(result.length != 0 ){
+                    result = result + input;
+                }
+                break;
+            case 'C':
+                result = "";
+                break;
+            case '=':
+                result = eval(result);
+                break
+        }
+
+        document.getElementById("result").innerText = result;
+    }
+
+</script>

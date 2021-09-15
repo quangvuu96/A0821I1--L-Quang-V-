@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính ngày trong tháng</title>
+</head>
+<body>
+<h1 style="padding: 40px;background-color: darkgray;color: gray; text-align: center">Kiểm tra số ngày trong tháng</h1>
+<p><input type="text" id="month" placeholder="Nhập tháng">
+    <button onclick="tinhtoan()">Tính số ngày</button>
+</p>
+<p id="display"></p>
+<script>
+    function tinhtoan() {
+        let month = parseInt(document.getElementById('month').value);
+        console.log(month)
+        switch (month) {
+            case 1 :
+            case 3 :
+            case 5 :
+            case 7 :
+            case 8 :
+            case 10 :
+            case 12 :
+                document.getElementById('display').innerText = "Tháng " + month + " có 31 ngày";
+                break;
+            case 4 :
+            case 6 :
+            case 9 :
+            case 11 :
+                document.getElementById('display').innerText = "Tháng " + month + " có 30 ngày";
+                break;
+            case 2 :
+                document.getElementById('display').innerText = "Tháng " + month + " có 28 hoặc 29 ngày";
+                break;
+        }
+    }
+</script>
+</body>
+</html>

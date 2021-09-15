@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cấu trúc điều kiện 2</title>
+</head>
+<body>
+<h1 style="text-align: center">Bài tập: Cấu trúc điều kiện 2   </h1>
+<div>
+    <h3>Bài 1: Chuyển từ độ C sang độ F</h3>
+    <p>Nhập độ C: <input type="text" id="nhietdo"></p>
+    <p><button onclick="chuyendo()">Chuyển đổi</button></p>
+</div>
+<hr>
+<div>
+    <h3>Bài 2: Chuyển mét sang feet</h3>
+    <p>Nhập m: <input type="text" id="_MtoF"></p>
+    <p><button onclick="chuyendoi()">Chuyển đổi</button></p>
+</div>
+<hr>
+<div>
+    <h3>Bài 3: Tính diện tích hình vuông khi biết cạnh a</h3>
+    <p>Nhập a: <input type="text" id="tinhS"></p>
+    <p><button onclick="tinhS()">Tính</button></p>
+</div>
+<hr>
+<div>
+    <h3>Bài 4: Tính diện tích hình chữ khi biết cạnh a,b</h3>
+    <p>Nhập a: <input type="text" id="chieudai"></p>
+    <p>Nhập b: <input type="text" id="chieurong"></p>
+    <p><button onclick="rectS()">Tính</button></p>
+</div>
+<hr>
+<div>
+    <h3>Bài 5: Tính diện tích hình tam giác vuông khi biết 2 cạnh kề a,b</h3>
+    <p>Nhập a: <input type="text" id="canhke1"></p>
+    <p>Nhập b: <input type="text" id="canhke2"></p>
+    <p><button onclick="angS()">Tính</button></p>
+</div>
+<hr>
+<div>
+    <h3>Bài 6: Giải phương trình bậc 1</h3>
+    <p>Nhập các tham số của phương trình ax + b = 0</p>
+    <p>Nhập a: <input type="text" id="thamsoA"></p>
+    <p>Nhập b: <input type="text" id="thamsoB"></p>
+    <p><button onclick="giaipt()">Kết quả</button></p>
+</div>
+<hr>
+<div>
+    <h3>Bài 7: Giải phương trình bậc 2</h3>
+    <p>Nhập các tham số của phương trình ax<sup>2</sup> + bx + c = 0 với a ≠ 0</p>
+    <p>Nhập a: <input type="text" id="ptA"></p>
+    <p>Nhập b: <input type="text" id="ptB"></p>
+    <p>Nhập c: <input type="text" id="ptC"></p>
+    <p><button onclick="giaipt2()">Kết quả</button></p>
+</div>
+<hr>
+<div>
+    <h3>Bài 8: Kiểm tra xem một số nhập vào có phải là tuổi của một người không</h3>
+    <p>Nhập số: <input type="text" id="age"></p>
+    <p><button onclick="age()">Kết quả</button></p>
+</div>
+<hr>
+<div>
+    <h3>Bài 9: Kiểm tra 3 số thực có phải là cạnh của 1 tam giác</h3>
+    <p>Nhập a: <input type="text" id="num1"></p>
+    <p>Nhập b: <input type="text" id="num2"></p>
+    <p>Nhập c: <input type="text" id="num3"></p>
+    <p><button onclick="tamGiac()">Kết quả</button></p>
+</div>
+<script>
+    function chuyendo() {
+        let doC = document.getElementById('nhietdo').value;
+        let doF = doC*9/5 + 32 ;
+        alert(doC + " độ C = " + doF + "độ F" );
+    }
+    function chuyendoi() {
+        let m = document.getElementById('_MtoF').value;
+        let f = m*3.2808;
+        alert(m + ' = ' + f );
+    }
+    function tinhS() {
+        let a = document.getElementById('tinhS').value;
+        alert("Diện tích hình vuông là " + a*a);
+    }
+    function rectS() {
+        let width = document.getElementById('chieudai').value;
+        let height = document.getElementById('chieurong').value;
+        alert("Diện tích hình chữ nhật là : " + (width*height));
+    }
+    function angS() {
+        let ke_1 = document.getElementById('canhke1').value;
+        let ke_2 = document.getElementById('canhke2').value;
+        alert("Diện tích của tam giác là " + (ke_1 * ke_2)/2);
+    }
+    function giaipt() {
+        let a = parseInt(document.getElementById('thamsoA').value);
+        let b = parseInt(document.getElementById('thamsoB').value);
+        if (a != 0) {
+            alert("Phương trình có nghiệm duy nhất : " + (-b/a));
+        } else if (b != 0) {
+            alert("Phương trình vô nghiệm");
+        } else {
+            alert("Phương trình vô số nghiệm");
+        }
+    }
+    function giaipt2() {
+        let a = parseInt(document.getElementById('ptA').value);
+        let b = parseInt(document.getElementById('ptB').value);
+        let c = parseInt(document.getElementById('ptC').value);
+        let delta = b*b - 4*a*c;
+        let x1 = (-b + Math.sqrt(delta))/(2*a);
+        let x2 = (-b - Math.sqrt(delta))/(2*a);
+        console.log(Math.sqrt(delta))
+        if (delta > 0) {
+            alert("Phương trình có 2 nghiệm phân biệt : " + "x1 = " + x1 + " ,x2 =  " + x2);
+        } else if (delta == 0) {
+            alert(" Phương trình có nghiệm kép : " + (-b/2*a));
+        } else {
+            alert("Phương trình vô nghiệm");
+        }
+    }
+    function age() {
+        let age = document.getElementById('age').value;
+        if (age > 120) {
+            alert("Không phải là tuổi con người!");
+        } else if(age >0) {
+            alert("Đây là tuổi con người!");
+        } else {
+            alert("Không phải là tuổi con người!");
+        }
+    }
+    function tamGiac() {
+        let a = parseInt(document.getElementById('num1').value);
+        let b = parseInt(document.getElementById('num2').value);
+        let c = parseInt(document.getElementById('num3').value);
+        if (a > 0 && b > 0 && c >0 && (a+b)>c && (b+c)>a && (a+c)>b ) {
+            alert("Đủ điều kiện là 3 cạnh của tam giác");
+        } else {
+            alert("Không đủ điều kiện là 3 cạnh của tam giác")
+        }
+    }
+</script>
+</body>
+</html>
