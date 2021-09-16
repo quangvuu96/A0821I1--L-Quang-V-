@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game puzzle</title>
+</head>
+<body>
+<img src="den_1.jpg" alt="black_1" style="width: 298px;height: 600px" id="img1" onclick="changeImg(1)">
+<img src="vang_1.jpg" alt="yellow_1" style="width: 298px;height: 600px" id="img2" onclick="changeImg(2)">
+<img src="do_2.jpg" alt="red_2" style="width: 297px;height: 600px" id="img3" onclick="changeImg(3)">
+<img src="den_4.jpg" alt="black_4" style="width: 297px;height: 600px" id="img4" onclick="changeImg(4)">
+<img src="do_5.jpg" alt="red_5" style="width: 297px;height: 600px" id="img5" onclick="changeImg(5)">
+<h2 id="result"></h2>
+<script>
+    function changeImg(input) {
+        let img;
+        switch (input) {
+            case 1 : {
+                img = document.getElementById('img1').getAttribute('src');
+                if (img === "den_1.jpg") {
+                    document.getElementById('img1').src = "vang_1.jpg";
+                } else if (img === "vang_1.jpg") {
+                    document.getElementById('img1').src = "do_1.jpg";
+                } else {
+                    document.getElementById('img1').src = "den_1.jpg";
+                }
+            }
+                break;
+            case 2 : {
+                img = document.getElementById('img2').getAttribute('src');
+                if (img === "den_2.jpg") {
+                    document.getElementById('img2').src = "vang_2.jpg";
+                } else if (img === "vang_2.jpg") {
+                    document.getElementById('img2').src = "do_2.jpg";
+                } else {
+                    document.getElementById('img2').src = "den_2.jpg";
+                }
+            }
+                break;
+            case 3 : {
+                img = document.getElementById('img3').getAttribute('src');
+                if (img === "den_3.jpg") {
+                    document.getElementById('img3').src = "vang_3.jpg";
+                } else if (img === "vang_3.jpg") {
+                    document.getElementById('img3').src = "do_3.jpg";
+                } else {
+                    document.getElementById('img3').src = "den_3.jpg";
+                }
+            }
+                break;
+            case 4 : {
+                img = document.getElementById('img4').getAttribute('src');
+                if (img === "den_4.jpg") {
+                    document.getElementById('img4').src = "vang_4.jpg";
+                } else if (img === "vang_4.jpg") {
+                    document.getElementById('img4').src = "do_4.jpg";
+                } else {
+                    document.getElementById('img4').src = "den_4.jpg";
+                }
+            }
+                break;
+            case 5 : {
+                img = document.getElementById('img5').getAttribute('src');
+                if (img === "den_5.jpg") {
+                    document.getElementById('img5').src = "vang_5.jpg";
+                } else if (img === "vang_5.jpg") {
+                    document.getElementById('img5').src = "do_5.jpg";
+                } else {
+                    document.getElementById('img5').src = "den_5.jpg";
+                }
+            }
+                break;
+        }
+        if ((document.getElementById('img1').getAttribute('src') === "den_1.jpg" &&
+                document.getElementById('img2').getAttribute('src') === "den_2.jpg" &&
+                document.getElementById('img3').getAttribute('src') === "den_3.jpg" &&
+                document.getElementById('img4').getAttribute('src') === "den_4.jpg" &&
+                document.getElementById('img5').getAttribute('src') === "den_5.jpg") ||
+            (document.getElementById('img1').getAttribute('src') === "vang_1.jpg" &&
+                document.getElementById('img2').getAttribute('src') === "vang_2.jpg" &&
+                document.getElementById('img3').getAttribute('src') === "vang_3.jpg" &&
+                document.getElementById('img4').getAttribute('src') === "vang_4.jpg" &&
+                document.getElementById('img5').getAttribute('src') === "vang_5.jpg") ||
+            (document.getElementById('img1').getAttribute('src') === "do_1.jpg" &&
+                document.getElementById('img2').getAttribute('src') === "do_2.jpg" &&
+                document.getElementById('img3').getAttribute('src') === "do_3.jpg" &&
+                document.getElementById('img4').getAttribute('src') === "do_4.jpg" &&
+                document.getElementById('img5').getAttribute('src') === "do_5.jpg")) {
+
+            document.getElementById('result').innerText = "Ghép màu thành công!!! Chuẩn rồi <3"
+        } else {
+            document.getElementById('result').innerText = "Chưa đúng đâu. Hãy tiếp tục thử !!!"
+        }
+
+    }
+</script>
+</body>
+</html>
