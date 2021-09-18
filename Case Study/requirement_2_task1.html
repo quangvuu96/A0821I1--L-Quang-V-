@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính thuế thu nhập và lương ròng</title>
+    <style>
+        #rect {
+            background-color: gainsboro;
+            width: 500px;
+            height: 250px;
+            margin: 50px auto;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<h1 style="text-align: center;padding: 30px;background-color: darkgray">Tính thuế thu nhập và lương ròng</h1>
+<div id="rect">
+    <p style="font-size: 25px;text-align: center;font-weight: bold">Bảng lương</p>
+    <p style="font-size: 20px">Nhập số lương nhân viên: <input type="text" placeholder="VNĐ" id="wage"></p>
+    <p style="font-size: 20px">Số thuế theo mức lương : <span id="result1"></span></p>
+    <p style="font-size: 20px">Lương ròng nhận được : <span id="result2"></span></p>
+    <button style="margin-left: 200px" onclick="checkWage()">Kiểm tra</button>
+</div>
+<script>
+    function checkWage() {
+        let wage = document.getElementById('wage').value;
+        let tax;
+        let wage_1;
+        if (wage < 7000000) {
+            tax = wage * 0.05;
+            wage_1 = wage * 0.95;
+        } else if (wage < 15000000) {
+            tax = wage * 0.1;
+            wage_1 = wage * 0.9;
+
+        } else {
+            tax = wage * 0.2;
+            wage_1 = wage * 0.8;
+
+        }
+        console.log(tax);
+        document.getElementById('result1').innerText = tax + "VNĐ";
+        document.getElementById('result2').innerText = wage_1 + "VNĐ";
+    }
+</script>
+</body>
+</html>

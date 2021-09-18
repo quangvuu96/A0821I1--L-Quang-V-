@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra bảng chữ cái</title>
+</head>
+<body>
+<script>
+    let alphabet = prompt("Nhập kí tự cần kiểm tra. Nhập 'exit' để thoát khỏi chương trình!  ");
+    while (alphabet != 'exit') {
+        switch (alphabet) {
+            case 'e' :
+            case 'u' :
+            case 'o' :
+            case 'a' :
+            case 'i' :
+            case 'E' :
+            case 'U' :
+            case 'O' :
+            case 'A' :
+            case 'I' :
+                alert(alphabet + " là nguyên âm ");
+                alphabet = prompt("Nhập kí tự cần kiểm tra. Nhập 'exit' để thoát khỏi chương trình!  ");
+                break;
+            default :
+                alert(alphabet + " là phụ âm ");
+                alphabet = prompt("Nhập kí tự cần kiểm tra. Nhập 'exit' để thoát khỏi chương trình!  ");
+        }
+    }
+</script>
+</body>
+</html>
