@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game đoán số</title>
+</head>
+<body>
+<h1 style="text-align: center">Trò chơi đoán số</h1>
+<button style="margin-left: 700px; width: 100px" onclick="play()">Chơi</button>
+<script>
+    function play() {
+        let range = parseInt(prompt("Trò chơi đoán số từ 0 - ? : "));
+        let num = prompt("Nhập số bạn đoán :");
+        let numRandom;
+        let luotchoi = 1;
+        numRandom = Math.floor(Math.random() * range);
+        console.log(numRandom);
+        while (luotchoi <= 3) {
+            if (num < numRandom) {
+                alert("Số bạn chọn nhỏ hơn số đúng. Cho phép chọn lại (tối đa 3 lần) : ")
+                num = prompt("Nhập số bạn đoán :");
+                luotchoi++;
+            } else if (num > numRandom) {
+                alert("Số bạn chọn lớn hơn số đúng. Cho phép chọn lại (tối đa 3 lần) : ")
+                num = prompt("Nhập số bạn đoán :");
+                luotchoi++;
+            } else {
+                alert("Bạn đã chọn đúng. Xin chúc mừng!!!")
+                break;
+            }
+        }
+    }
+</script>
+</body>
+</html>

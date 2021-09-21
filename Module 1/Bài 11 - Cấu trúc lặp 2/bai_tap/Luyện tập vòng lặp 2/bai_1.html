@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In dãy Fibonacci</title>
+</head>
+<body>
+<h1 style="text-align: center">Dãy Fibonacci</h1>
+<script>
+    let F = 0, F1 = 0, F2 = 0;
+    let fibonacci = "";
+    for (let i = 1; i < 50; i++) {
+        if (i == 1) {
+            F = 1;
+            F2 = 1;
+            fibonacci += F + "<br>";
+        } else {
+            F = F1 + F2;
+            F1 = F2;
+            F2 = F;
+            fibonacci += F + "<br>";
+        }
+    }
+    document.write(fibonacci);
+</script>
+</body>
+</html>

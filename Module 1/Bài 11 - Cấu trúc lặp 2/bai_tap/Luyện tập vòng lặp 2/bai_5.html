@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chương trình tính lãi ngân hàng</title>
+</head>
+<body>
+<h1 style="text-align: center; color: darkgray; padding: 30px">Chương trình tính lãi ngân hàng</h1>
+<script>
+    let sotien = parseInt(prompt("Nhập số tiền gửi : "));
+    let sothang = parseInt(prompt("Nhập số tháng gửi : "));
+    let tienlai = 0;
+    let tongtienlai = tienlai;
+    document.write("Số tiền bạn gửi là " + sotien + " VNĐ trong " + sothang + " tháng với lãi suất 5%/ năm " + "<br>");
+    for (let i = 0; i < sothang; i++) {
+        tienlai = (sotien * 0.05) / 12;
+        tongtienlai += tienlai;
+        sotien += tienlai;
+        document.write("Tiền lãi tháng " + (i + 1) + " là " + tienlai.toFixed(0) + "VNĐ <br> ")
+    }
+    document.write("Tổng tiền lãi của bạn trong " + sothang + " tháng là " + tongtienlai.toFixed(0) + " VNĐ <br>")
+</script>
+</body>
+</html>

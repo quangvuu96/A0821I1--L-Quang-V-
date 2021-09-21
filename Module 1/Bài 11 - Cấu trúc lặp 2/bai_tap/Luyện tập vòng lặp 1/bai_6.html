@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tổng 30 số chia hết cho 7 trong số tự nhiên</title>
+</head>
+<body>
+<script>
+    let  count = 1, tong = 0;
+    for (let num = 1; count <= 30 ; num++) {
+        if (num % 7 == 0) {
+            document.write (num + " ");
+            tong += num;
+            count++;
+        }
+    }
+    document.write("<br>" + " Tổng 30 số chia hết cho 7 : " + tong);
+</script>
+</body>
+</html>
