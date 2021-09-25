@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đảo ngược mảng</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("Nhập số phần tử của mảng : "));
+    let arr = Array(n);
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = parseInt(prompt("Nhập phần tử thứ " + (i + 1) + " của mảng : "));
+    }
+    let first = 0;
+    let last = arr.length - 1;
+    while (first < last) {
+        let a = arr[first];
+        arr[first] = arr[last];
+        arr[last] = a;
+        first++;
+        last--;
+    }
+    document.write("Mảng sau khi được đảo ngược là : " + arr.join(""));
+</script>
+</body>
+</html>

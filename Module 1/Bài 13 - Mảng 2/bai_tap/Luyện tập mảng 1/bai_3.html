@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("Nhập số phần tử trong mảng :"));
+    let array = Array(n);
+    let index = 0;
+    let tb = 0;
+    for (let j = 0; j < array.length; j++) {
+        array[j] = parseInt(prompt("Nhập số nguyên :"));
+    }
+    let tong = array[0];
+    let max = array[0];
+    for (let i = 1; i < array.length; i++) {
+        if (array[i] > max) {
+            max = array[i];
+            index = i;
+        }
+        tong += array[i];
+    }
+    console.log(tong);
+    tb = tong / n;
+    document.write("Số lớn nhất trong mảng là : " + max + " tại vị trí index :" + index + "<br>");
+    document.write("Trung bình các giá trị phần tử trong mảng : " + tb);
+</script>
+</body>
+</html>

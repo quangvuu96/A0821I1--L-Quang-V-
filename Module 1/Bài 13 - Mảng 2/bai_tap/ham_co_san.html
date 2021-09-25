@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sử dụng hàm có sẵn</title>
+</head>
+<body>
+<script>
+    let colors = ["Red", "White", "Black", "Blue"];
+    document.write(colors.toString());
+    document.write("<br>");
+    document.write(colors.join(","));
+    document.write("<br>");
+    document.write(colors.join("-"));
+    document.write("<br>");
+    document.write(colors.join(" . "));
+    document.write("<hr>");
+    let num = parseInt(prompt("Nhập dãy số :"));
+    let str = num.toString();
+    let arr = [str[0]];
+    for (let x = 1; x < str.length; x++) {
+        if (str[x - 1] % 2 == 0 & str[x] % 2 == 0) {
+            arr.push('-', str[x]);
+            console.log(str[x]);
+        } else {
+            arr.push(str[x]);
+        }
+    }
+    document.write(arr.join(''));
+    document.write("<hr>");
+    let str1 = 'Alice In Borderland';
+    let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let LOWER = 'abcdefghijklmnopqrstuvwxyz';
+    let result = [];
+
+    for (let x = 0; x < str1.length; x++) {
+        if (UPPER.indexOf(str1[x]) !== -1) {
+            result.push(str1[x].toLowerCase());
+        } else if (LOWER.indexOf(str1[x]) !== -1) {
+            result.push(str1[x].toUpperCase());
+        } else {
+            result.push(str1[x]);
+        }
+    }
+    document.write(result.join(''));
+</script>
+</body>
+</html>

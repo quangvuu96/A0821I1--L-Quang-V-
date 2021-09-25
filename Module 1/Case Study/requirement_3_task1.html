@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prefix Sums</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("Nhập độ dài của mảng : "));
+    let a = Array();
+    for (let i = 0; i < n; i++) {
+        a[i] = parseInt(prompt("Nhập phần tử của mảng tại index " + i + " :"));
+    }
+    let b = Array();
+    let sum = 0;
+    for (let c = 0; c < a.length; c++) {
+        sum += a[c];
+        b[c] = sum;
+    }
+    document.write(b.toString());
+</script>
+</body>
+</html>

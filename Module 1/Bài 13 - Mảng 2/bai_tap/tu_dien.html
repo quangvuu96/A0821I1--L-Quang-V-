@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển Việt - Anh</title>
+</head>
+<body>
+<h1 style="text-align: center;padding: 30px; background-color: gainsboro">Dictionary</h1>
+<input type="text" id="val" placeholder="Nhập từ cần tra">
+<input type="button" value="Dịch" onclick="trans()">
+<p id="result"></p>
+<script>
+    function trans() {
+        let vn = ["xin chào", "tạm biệt", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
+        let eng = ["hello", "goodbye", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
+        let input = document.getElementById("val").value;
+        for (let i = 0; i < vn.length; i++) {
+            if (vn[i] == input) {
+                console.log(i)
+                document.getElementById("result").innerHTML = eng[i];
+            }
+        }
+    }
+</script>
+</body>
+</html>

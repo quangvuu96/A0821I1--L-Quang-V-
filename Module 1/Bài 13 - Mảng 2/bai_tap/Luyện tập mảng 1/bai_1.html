@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+<script>
+    let arr = Array(10);
+    let count = 0;
+    let rs = "";
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = parseInt(prompt("Nhập 10 số nguyên tùy ý :"));
+        if (arr[i] >= 10) {
+            rs += arr[i].toString() + " ";
+            count++
+        }
+    }
+    document.write("Có " + count + " số nguyên bạn nhập lớn hơn hoặc bằng 10 :" + rs);
+</script>
+</body>
+</html>

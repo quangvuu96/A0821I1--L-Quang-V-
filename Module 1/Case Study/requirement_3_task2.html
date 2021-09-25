@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm mảng</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("Nhập độ dài của mảng A : "));
+    let a = Array();
+    for (let i = 0; i < n; i++) {
+        a[i] = parseInt(prompt("Nhập phần tử của mảng A tại index " + i + " :"));
+    }
+    let m = parseInt(prompt("Nhập độ dài của mảng B : "));
+    let b = Array();
+    for (let i = 0; i < m; i++) {
+        b[i] = parseInt(prompt("Nhập phần tử của mảng B tại index " + i + " :"));
+    }
+    let c = Array();
+    let d = "";
+    console.log(a);
+    console.log(b);
+    if (n > m) {
+        for (let i = 0; i < n; i++) {
+            let ok = true;
+            for (let j = 0; j < m; j++) {
+                if (a[i] == b[j]) {
+                    ok = false;
+                }
+            }
+            if (ok == true) {
+                d = a[i] + " ";
+                c.push(d);
+            }
+        }
+    } else {
+        for (let i = 0; i < m; i++) {
+            let ok = true;
+            for (let j = 0; j < n; j++) {
+                if (b[i] === a[j]) {
+                    ok = false;
+                }
+            }
+            if (ok == true) {
+                d = b[i] + " ";
+                c.push(d);
+            }
+        }
+    }
+    console.log(c)
+    document.write(c);
+</script>
+</body>
+</html>

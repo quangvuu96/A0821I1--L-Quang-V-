@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 8</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("Nhập số phần tử mảng A: "));
+    let arr = Array(n);
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = parseInt(prompt("Nhập phần tử số nguyên " + (i + 1) + " :"));
+    }
+    let arr1 = arr.sort(function (a,b) {
+       return  b - a
+    });
+    document.write("Mảng sau khi được sắp xếp giảm dần : " + arr1 );
+</script>
+</body>
+</html>

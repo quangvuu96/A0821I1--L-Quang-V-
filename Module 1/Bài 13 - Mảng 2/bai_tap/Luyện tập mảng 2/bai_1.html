@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo mảng 2 chiều</title>
+</head>
+<body>
+<script>
+    let row = parseInt(prompt("Nhập số dòng của mảng 2 chiều :"));
+    let col = parseInt(prompt("Nhập số cột của mảng 2 chiều :"));
+    let arr = Array(row);
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = Array(col);
+        for (let j = 0; j < arr[i].length; j++) {
+            let a = parseInt(prompt("Nhập phần tử tại [" + i + "][" + j + "] =" ));
+            arr[i][j] = a;
+        }
+    }
+    console.log(arr);
+    for (let a = 0; a < arr.length; a++) {
+        document.write("row" + a)
+        for (let b = 0; b < arr[a].length;b++) {
+            document.write("<br>" + arr[a][b] + " ");
+        }
+        document.write("<br>")
+    }
+</script>
+</body>
+</html>

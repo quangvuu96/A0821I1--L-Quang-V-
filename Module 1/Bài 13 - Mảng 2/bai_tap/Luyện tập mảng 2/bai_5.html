@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2 mảng giống nhau</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("Nhập số phần tử của mảng A : "));
+    let arr = Array(n);
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = parseInt(prompt("Nhập phần tử thứ " + (i + 1) + " của mảng A : "));
+    }
+    let m = parseInt(prompt("Nhập số phần tử của mảng B : "));
+    let arr1 = Array(m);
+    for (let i = 0; i < arr.length; i++) {
+        arr1[i] = parseInt(prompt("Nhập phần tử thứ " + (i + 1) + " của mảng B : "));
+    }
+    let a = 0;
+    let b = 0;
+    let sosanh = true
+    if (arr.length != arr1.length) {
+        sosanh = false ;
+    } else {
+        while(a < arr.length) {
+            if (arr[a] === arr1[b]) {
+                sosanh = true;
+                a++;
+                b++;
+            } else {
+                sosanh = false;
+                a++;
+                b++;
+            }
+        }
+    }
+    if (sosanh == true) {
+        document.write(" Hai mảng A và B giống nhau")
+    } else {
+        document.write(" Hai mảng A và B không giống nhau");
+    }
+</script>
+</body>
+</html>

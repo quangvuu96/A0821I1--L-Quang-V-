@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("Nhập số phần tử mảng A: "));
+    let arr = Array(n);
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = parseInt(prompt("Nhập phần tử số nguyên " + (i + 1) + " :"));
+    }
+    let v = parseInt(prompt("Nhập phần tử số nguyên V : "));
+    console.log(arr)
+    console.log(v)
+    if (arr.indexOf(v) != -1) {
+        document.write("V is in the array A");
+    } else {
+        document.write("V is not in the array A");
+    }
+
+</script>
+</body>
+</html>
