@@ -6,18 +6,14 @@
 </head>
 <body>
 <script>
-    let arr = [1, "chào", 45, "anh", 35, 56, "Chiến", "nhá"];
-    let count = 0;
-    let rs = "";
-    document.write("Mảng gồm = [" + arr + "] ");
-    document.write("<br>");
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] % 2 != 0 && arr[i] % 2 != 1) {
-            rs += arr[i] + " ";
-            count++
-        }
+    let s = prompt("nhập vào 1 chuỗi dũ liệu :");
+    s = s.replace(/\s+/g, ' ')
+    let d = 1;
+    for (let i = 0; i < s.length; i++) {
+        if (s[i] == " ")
+            d++;
     }
-    document.write("Số kí tự trong mảng trên là " + count + " : " + rs);
+    alert("số từ :" + d);
 </script>
 </body>
 </html>
