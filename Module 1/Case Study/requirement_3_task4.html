@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In ra màn hình</title>
+</head>
+<body>
+<script>
+    let arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let arr1 = ["không", "một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín", "mười"];
+    let input = prompt("Nhập 1 số : ");
+    let value = input.split("");
+    console.log(value);
+    let rs = "";
+    for (let i = 0; i < value.length; i++) {
+        for (let j = 0; j < arr.length; j++) {
+            if (value[i] == arr[j]) {
+                rs += arr1[j] + " ";
+            }
+        }
+    }
+    document.write(rs);
+</script>
+</body>
+</html>

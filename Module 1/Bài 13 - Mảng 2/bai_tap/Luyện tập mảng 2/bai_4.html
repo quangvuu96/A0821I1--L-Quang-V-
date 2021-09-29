@@ -6,14 +6,15 @@
 </head>
 <body>
 <script>
-    let s = prompt("nhập vào 1 chuỗi dũ liệu :");
-    s = s.replace(/\s+/g, ' ')
-    let d = 1;
+    let s = prompt("Nhập vào 1 chuỗi dũ liệu :");
+    let arr = s.split(" ");
     for (let i = 0; i < s.length; i++) {
-        if (s[i] == " ")
-            d++;
+        if (arr[i] === "") {
+            arr.splice(i, 1);
+            i--;
+        }
     }
-    alert("số từ :" + d);
+    document.write("Số từ của chuỗi vừa nhập là : " + arr.length);
 </script>
 </body>
 </html>

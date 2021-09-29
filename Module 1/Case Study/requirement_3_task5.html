@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gọi menu</title>
+    <style>
+        th {
+            border: 1px solid black;
+        }
+
+        td {
+            border: 1px solid black;
+        }
+
+        .tt1 {
+            border: 1px solid black;
+            border-collapse: collapse;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+<h1 style="text-align: center;color: darkgray;background-color: gainsboro;padding: 40px ">MENU</h1>
+<table style="border: 1px solid black ; border-collapse: collapse;width: 50%; text-align: center">
+    <tr>
+        <th>STT</th>
+        <th>Món uống</th>
+        <th>Giá tiền</th>
+    </tr>
+    <tr class="tt1">
+        <td>1</td>
+        <td>Cafe</td>
+        <td>12.000VNĐ</td>
+    </tr>
+    <tr class="tt1">
+        <td>2</td>
+        <td>Cam vắt</td>
+        <td>20.000VNĐ</td>
+    </tr>
+    <tr class="tt1">
+        <td>3</td>
+        <td>Nước ép cà rốt</td>
+        <td>21.000VNĐ</td>
+    </tr>
+    <tr class="tt1">
+        <td>4</td>
+        <td>Nước ép cà chua</td>
+        <td>18.000VNĐ</td>
+    </tr>
+    <tr class="tt1">
+        <td>5</td>
+        <td>Nước lọc</td>
+        <td>8.000VNĐ</td>
+    </tr>
+    <tr class="tt1">
+        <td>6</td>
+        <td>Nước dừa</td>
+        <td>15.000VNĐ</td>
+    </tr>
+</table>
+<hr>
+<button value="order" onclick="getOrder()">Chọn món</button>
+<script>
+    let arr = [12000, 20000, 21000, 18000, 8000, 15000];
+    let arr1 = ["Cafe", "Cam vắt", "Nước ép cà rốt", "Nước ép cà chua", "Nước lọc", "Nước dừa"];
+    let arr2 = [];
+    let result = 0;
+
+    function getOrder() {
+        do {
+            let choose = parseInt(prompt("Nhập số thứ tự món muốn chọn : "));
+            switch (choose) {
+                case 1 :
+                    arr2.push(arr1[0]);
+                    arr2.push(arr[0]);
+                    break;
+                case 2 :
+                    arr2.push(arr1[1]);
+                    arr2.push(arr[1]);
+                    break;
+                case 3 :
+                    arr2.push(arr1[2]);
+                    arr2.push(arr[2]);
+                    break;
+                case 4 :
+                    arr2.push(arr1[3]);
+                    arr2.push(arr[3]);
+                    break;
+                case 5 :
+                    arr2.push(arr1[4]);
+                    arr2.push(arr[4]);
+                    break;
+                case 6 :
+                    arr2.push(arr1[5]);
+                    arr2.push(arr[5]);
+                    break;
+                default: {
+                    document.write("<h1>Tổng hóa đơn của bạn : </h1>");
+                    for (let i = 0; i < arr2.length; i++) {
+                        if (i % 2 === 0) {
+                            document.write(arr2[i] + ": ");
+                        } else {
+                            result += arr2[i];
+                            document.write(arr2[i] + "<br>");
+                        }
+                    }
+                    document.write("<hr>");
+                    document.write("Tổng cộng : " + result + "VNĐ");
+                    return true;
+                }
+            }
+        }
+        while (true);
+    }
+
+</script>
+</body>
+</html>

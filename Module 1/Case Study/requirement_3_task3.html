@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phân số lớn nhất</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("Nhập độ dài mảng A :"));
+    let arrA = Array(n);
+    for (let i = 0; i < arrA.length; i++) {
+        arrA[i] = parseInt(prompt("Nhập phần tử " + i + " của mảng A :"));
+    }
+    let m = parseInt(prompt("Nhập độ dài mảng B :"));
+    let arrB = Array(m);
+    for (let i = 0; i < arrB.length; i++) {
+        arrB[i] = parseInt(prompt("Nhập phần tử " + i + " của mảng B :"));
+    }
+    let max = arrA[0];
+    for (let i = 1; i < arrA.length; i++) {
+        if (arrA[i] > max) {
+            max = arrA[i];
+        }
+    }
+    console.log(arrA)
+    console.log(arrB)
+    let min = arrB[0];
+    for (let i = 1; i < arrB.length; i++) {
+        if (arrB[i] < min && arrB[i] !== 0) {
+            min = arrB[i];
+            }
+    }
+    document.write("Phân số lớn nhất là : " + max + "/" + min);
+</script>
+</body>
+</html>
