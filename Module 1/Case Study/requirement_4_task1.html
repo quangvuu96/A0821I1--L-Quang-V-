@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuẩn hóa xâu kí tự</title>
+</head>
+<body>
+<p>Chuỗi nhập : <span> <input type="text" id="str"></span></p>
+<p>Chuỗi đã nhập : <span id="display1"></span></p>
+<p>Chuỗi đã chuẩn hóa : <span id="display2"></span></p>
+<p>Từ dài nhất trong chuỗi : <span id="display3"></span></p>
+<p><input type="button" value="Converse" onclick="converseStr()"></p>
+<script>
+
+    function converseStr(str) {
+        str = document.getElementById("str").value;
+        document.getElementById("display1").innerHTML = str;
+        let arr = str.split(" ");
+        let arr1 = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === "") {
+                arr.splice(i, 1);
+                i--;
+            }
+        }
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                if (j === 0) {
+                    arr1.push(arr[i][0].toUpperCase());
+                } else {
+                    arr1.push(arr[i][j].toLowerCase());
+                }
+            }
+            arr1.push(" ");
+        }
+        arr1 = arr1.join("");
+        document.getElementById("display2").innerHTML = arr1;
+        let arr2 = arr1.split(" ");
+        let max = arr2[0];
+        console.log(max);
+        for (let i = 1; i < arr2.length; i++) {
+           if (arr2[i].length > max.length ) {
+               max = arr2[i];
+               console.log(arr2[2]);
+               return max;
+           }
+        }
+
+        document.getElementById("display3").innerHTML = max;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập </title>
+</head>
+<body>
+<p style="text-align: center">
+    <input type="button" value="Click" onclick="sum()">
+</p>
+<script>
+    function sum(num1, num2) {
+        num1 = parseFloat(prompt("Mời bạn nhập số đầu tiên :"))
+        num2 = parseFloat(prompt("Mời bạn nhập số thứ hai :"))
+        if (num1 > num2) {
+            alert("Mời bạn nhập lại");
+        } else {
+            alert("Tổng 2 số là " + (num1 + num2));
+            return num1 + num2;
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giai thừa</title>
+</head>
+<body>
+
+<script>
+    let num = parseInt(prompt("Nhập số cần tính giai thừa : "));
+    let rs = 1;
+    alert("Giai thừa của " + num + " là : " + giaithua(num));
+
+    function giaithua(x) {
+        let count = 1;
+        while (count <= x) {
+            rs *= count;
+            count++;
+        }
+        return rs;
+    }
+</script>
+</body>
+</html>

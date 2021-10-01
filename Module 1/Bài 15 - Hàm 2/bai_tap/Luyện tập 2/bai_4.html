@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra số</title>
+</head>
+<body>
+
+<script>
+    let str = prompt("Nhập kí tự : ");
+    alert(checkNum(str));
+
+    function checkNum(x) {
+        if (x % 2 === 1 || x % 2 === 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+</script>
+</body>
+</html>

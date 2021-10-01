@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giá trị nhỏ nhất</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("Nhập độ dài của mảng "));
+    let arr = Array(n);
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = parseInt(prompt("Nhập phần tử " + i + " của mảng :"));
+    }
+    function minArr() {
+        let min = arr[0];
+        if (arr.length == 0) {
+            return "Mảng rỗng";
+        }
+        for(let i = 1; i <arr.length;i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+    let min = minArr(arr);
+    alert(min);
+</script>
+</body>
+</html>

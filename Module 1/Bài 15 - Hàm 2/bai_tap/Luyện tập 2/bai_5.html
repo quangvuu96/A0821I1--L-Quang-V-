@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số nhỏ nhất</title>
+</head>
+<body>
+
+<script>
+   function checkMin(x, y, z) {
+        x = parseInt(prompt("Nhập số đầu tiên : "));
+        y = parseInt(prompt("Nhập số thứ hai : "));
+        z = parseInt(prompt("Nhập số thứ ba : "));
+        let min = x;
+        if (y < x) {
+            if (y < z) {
+                min = y;
+            } else {
+                min = z;
+            }
+        } else {
+            if (z < x) {
+                min = z;
+            } else {
+                min = x;
+            }
+        }
+        return min;
+    }
+    alert("Số nhỏ nhất trong 3 số : " + checkMin());
+</script>
+</body>
+</html>

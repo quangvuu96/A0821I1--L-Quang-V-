@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi đơn vị</title>
+</head>
+<body>
+<h1 style="text-align: center;padding: 40px;background-color: darkgray">Chuyển đổi m sang feet và ngược lại</h1>
+<p><span>Feet : </span> <input type="number" id="feetConver" placeholder="feet" oninput="feetToMeter(this.value)"> <span>=> Mét : <span
+        id="outputM"></span></span></p>
+<p><span>Mét : </span> <input type="number" id="metConver" placeholder="met" oninput="metToFeet(this.value)"> <span>=> Feet : <span
+        id="outputF"></span></span></p>
+<script>
+    function feetToMeter(feet) {
+        feet = parseFloat(feet);
+        document.getElementById("outputM").innerHTML = feet*0.305;
+    }
+    function metToFeet(meter) {
+        meter = parseFloat(meter);
+        document.getElementById("outputF").innerHTML = meter*3.279;
+    }
+</script>
+</body>
+</html>

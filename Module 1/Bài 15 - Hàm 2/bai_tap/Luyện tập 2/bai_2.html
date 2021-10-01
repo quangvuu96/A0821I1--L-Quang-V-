@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính chu vi, diện tích hình tròn</title>
+</head>
+<body>
+<script>
+    const PI = 3.14;
+    let num = parseFloat(prompt("Nhập bán kính R : "));
+    alert("Chu vi của hình tròn : " + chuvi(num));
+    alert("Diện tích của hình tròn : " + dientich(num));
+
+    function chuvi(x) {
+        let v = 2 * PI * x;
+        return v;
+    }
+
+    function dientich(x) {
+        let s = PI * x * x;
+        return s;
+    }
+</script>
+</body>
+</html>

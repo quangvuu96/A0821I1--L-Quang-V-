@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Những ngôi sao</title>
+</head>
+<body>
+<h1 style="text-align: center;padding: 40px;background-color: darkgray">Các chòm sao</h1>
+<p style="text-align: center"><input type="button" value="Click!!!" onclick="searchStar()"></p>
+<script>
+    let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    function searchStar(name) {
+            name = prompt("Mời bạn nhập tên ngôi sao : ");
+            for (let i = 0; i < arr1.length; i++) {
+                if (arr1[i] === name) {
+                    alert("Chòm sao tương ứng là : " + arr2[i]);
+                    return false;
+                }
+            }
+            if (true) {
+                alert("Không có tên ngôi sao nào");
+            }
+        }
+
+</script>
+</body>
+</html>
