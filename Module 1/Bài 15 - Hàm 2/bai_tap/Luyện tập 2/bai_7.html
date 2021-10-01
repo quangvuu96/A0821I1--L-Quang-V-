@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đổi  chỗ 2 số nguyên</title>
+</head>
+<body>
+<script>
+    function changePos() {
+        let num1 = parseFloat(prompt("Nhập số đầu tiên : "))
+        let num2 = parseFloat(prompt("Nhập số thứ hai : "))
+        let arr = [num1,num2];
+        let arr2 = [num2,num1];
+        document.write("Đổi chỗ 2 số : " + arr + " thành => " + arr2);
+    }
+    changePos();
+</script>
+</body>
+</html>
