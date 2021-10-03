@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tổng số chẵn mảng 2 chiều</title>
+</head>
+<body>
+<script>
+    let m = parseInt(prompt("Nhập số hàng : "));
+    let n = parseInt(prompt("Nhập số cột : "));
+    let arr = Array(m)
+    let arr_sum = [];
+    for (let i = 0; i < m; i++) {
+        arr[i] = Array(n);
+        for (let j = 0; j < arr[i].length; j++) {
+            let a = parseInt(prompt("Nhập phần tử tại [" + i + "][" + j + "] : "))
+            arr[i][j] = a;
+        }
+    }
+    console.log(arr);
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr[i].length; j++) {
+            if (arr[i][j] % 2 == 0) {
+                arr_sum.push(arr[i][j])
+            }
+        }
+    }
+    console.log(arr_sum)
+
+    function sum(mang) {
+        let sum = 0;
+        for (let i = 0; i < mang.length; i++) {
+            sum += mang[i]
+        }
+        return sum;
+    }
+
+    document.write("Các số  chẵn mảng 2 chiều trên là : " + arr_sum + " có tổng = " + sum(arr_sum));
+</script>
+</body>
+</html>

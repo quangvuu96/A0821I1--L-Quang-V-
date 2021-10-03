@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giá trị lớn nhất, nhỏ nhất</title>
+</head>
+<body>
+
+<script>
+    function creatArr(m, n) {
+        m = parseInt(prompt("Nhập số hàng : "));
+        n = parseInt(prompt("Nhập số cột : "));
+        let arr = Array(m);
+        for (let i = 0; i < m; i++) {
+            arr[i] = Array(n);
+            for (let j = 0; j < arr[i].length; j++) {
+                let a = parseInt(prompt("Nhập phần tử tại [" + i + "][" + j + "] : "));
+                arr[i][j] = a;
+            }
+        }
+        return arr;
+    }
+    function checkMinMax(arr) {
+        let min = arr[0][0];
+        let max = arr[0][0];
+        for(let i = 0; i <arr.length;i++) {
+            for(let j = 1;j < arr[i].length;j++) {
+                if (arr[i][j] > max) {
+                    max = arr[i][j];
+                }
+                if (arr[i][j] < min) {
+                    min = arr[i][j];
+                }
+            }
+        }
+    document.write("Giá trị nhỏ nhất là : " + min + "<br>" + "Giá trị lớn nhất là " + max);
+    }
+    checkMinMax(creatArr());
+</script>
+</body>
+</html>

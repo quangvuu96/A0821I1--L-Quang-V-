@@ -6,7 +6,28 @@
 </head>
 <body>
 <script>
-
+    function diemchung(s1, s2) {
+        s1 = prompt("Nhập chuỗi 1 :")  //aabcc
+        s2 = prompt("Nhập chuỗi 2 :")   //adcaa
+        let count = 0;
+        let rs = "";
+        let s4 = s1.split('');
+        let s3 = s2.split('');
+        for (let i = 0; i < s4.length; i++) {
+            for (let j = 0; j < s3.length; j++) {
+                if (s4[i] == s3[j]) {
+                    count++;
+                    rs += s3[j] + " ";
+                    s3.splice(j, 1);
+                    break;
+                }
+            }
+            console.log(count);
+        }
+        document.write("Số kí tự chung là " + count + " là " + rs);
+        return count;
+    }
+    diemchung();
 </script>
 </body>
 </html>
