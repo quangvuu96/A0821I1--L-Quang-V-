@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng quản lí sản phẩm</title>
+    <style>
+        td {
+            border-collapse: collapse;
+            border: 1px solid black;
+            padding: 5px;
+            text-align: left;
+        }
+
+        th {
+            border-collapse: collapse;
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        tr:nth-child(even) {
+            background-color: wheat;
+        }
+
+        button {
+            width: 60px;
+            height: 35px;
+            background-color: darkgray;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<h1 style="background-color: darkgray;text-align: center;color: gray;padding: 40px">Ứng dụng quản lí sản phẩm cơ
+    bản</h1>
+<label for="input"><strong>Add New Product</strong></label><br>
+<input type="text" placeholder="New Product" id="input" style="width: 255px;height: 30px">
+<input type="button" value="Add" onclick="addNewProduct()"
+       style="width: 60px;height: 35px;background-color: darkgray;border-radius: 10px;"><br>
+<label><strong>Display All Product</strong></label>
+<div id="display"></div>
+<script>
+    let productList = ["Iphone", "Samsung Galaxy", "Oppo", "Meizu", "Nokia", "Lenovo"];
+
+    function display() {
+        let table = "<table style='border: 1px solid black; border-collapse: collapse'>" + "<tr> <th>Product Name </th></tr>";
+        for (let i = 0; i < productList.length; i++) {
+            table += "<tr>" + "<td>" + productList[i] + "</td>" +
+                "<td><button onclick='editProduct(" + i + ")'>Edit</button></td>" +
+                "<td><button onclick='delProduct(" + i + ")'>Delete</button></td>" + "</tr>"
+        }
+        table += "</table>"
+        document.getElementById('display').innerHTML = table;
+    }
+
+    window.onload(display());
+
+    function addNewProduct() {
+        let product = document.getElementById('input').value;
+        productList.push(product);
+        document.getElementById("input").value = " ";
+        display();
+    }
+
+    function editProduct(index) {
+        productList[index] = prompt("Nhập tên mới : ");
+        display();
+    }
+
+    function delProduct(index) {
+        let check = confirm("Bạn có muốn xóa sản phẩm " + productList[index] + " không ?");
+        if (check) {
+            productList.splice(index, 1);
+            display();
+        }
+    }
+</script>
+</body>
+</html>

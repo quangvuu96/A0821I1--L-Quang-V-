@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kí tự khác nhau</title>
+</head>
+<body>
+
+<script>
+  let str = prompt("Nhập chuỗi : ");
+  let arr = str.split('');
+  for(let i = 0; i < arr.length;i++ ) {
+      for(let j = 0;j < arr.length;j++) {
+          if (arr[i] === arr[j] && i != j) {
+            arr.splice(j,1,"");
+          }
+      }
+  }
+  for (let i = 0; i < arr.length;i++) {
+      if(arr[i] === "") {
+          arr.splice(i,1);
+          i--;
+      }
+  }
+
+  document.write("Có " + arr.length + " kí tự khác nhau trong chuỗi là : " + arr);
+</script>
+</body>
+</html>
