@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Điện thoại</title>
+    <style>
+        button {
+            border-radius: 6px;
+            border: none;
+            color: white;
+            padding: 12px 20px;
+            background-color: dodgerblue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<h1 style="text-align: center; background-color: aquamarine;color: gray; padding: 40px; font-size: 50px">Điện thoại</h1>
+<table style="margin: 0 auto">
+    <th>
+        <button type="button" onclick="turnOn()">Bật</button>
+    </th>
+    <th>
+        <button onclick="turnOff()">Tắt</button>
+    </th>
+    <th>
+        <button onclick="sendMess()">Messenger</button>
+    </th>
+    <th>
+        <button onclick="checkOnOff()">Kiểm tra bật tắt</button>
+    </th>
+    <th>
+        <button onclick="charge()">Sạc pin</button>
+    </th>
+    <th>
+        <button onclick="display()">Hiển thị pin</button>
+    </th>
+    <th>
+        <span id="display"></span>
+    </th>
+</table>
+<script>
+
+    class Mobile {
+        constructor(battery) {
+            this.battery = battery;
+            this.receiveBox = [];
+            this.outBox = [];
+            this.isOn = true;
+
+        }
+
+        checkOnOff() {
+            if (this.isOn) {
+                alert("Điện thoại đang bật");
+                return true;
+            } else {
+                alert("Điện thoại đang tắt");
+                return false;
+            }
+        }
+
+        turnOn() {
+            alert("Điện thoại đã bật");
+            return this.isOn = true;
+        }
+
+        turnOff() {
+            alert("Điện thoại đã tắt");
+            return this.isOn = false;
+        }
+
+        charge() {
+            if (this.battery < 100) {
+                alert("Điện thoại đang sạc pin : " + this.battery++);
+            } else if (this.battery === 100) {
+                alert("Điện thoại đầy pin");
+            }
+        }
+
+        afterUse() {
+            this.battery--;
+            display();
+        }
+
+
+        receiveText(context) {
+            if (!this.isOn) {
+                alert("Điện thoại đang tắt!!!");
+            } else {
+                this.receiveBox.push(context);
+                this.afterUse();
+            }
+        }
+
+        sendMess(otherPhone) {
+            if (!this.isOn) {
+                alert("Điện thoại đang tắt!!!");
+            } else {
+                let context = prompt("Nhập tin nhắn : ")
+                otherPhone.receiveText(context);
+                this.outBox.push(context);
+                this.afterUse();
+            }
+        }
+    }
+
+    function turnOn() {
+        nokia.turnOn();
+    }
+
+    function turnOff() {
+        nokia.turnOff();
+    }
+
+    function sendMess() {
+        nokia.sendMess(iphone);
+    }
+
+    function charge() {
+        nokia.charge();
+        display();
+    }
+
+    function checkOnOff() {
+        nokia.checkOnOff();
+    }
+
+    function display() {
+        document.getElementById('display').innerHTML = "Pin : " + nokia.battery + "%";
+    }
+
+    let nokia = new Mobile(50);
+    let iphone = new Mobile(20);
+    console.log(nokia, iphone);
+</script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adam và Eva</title>
+    <style>
+        button {
+            background-color: gray;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<button onclick="say()">NÓI</button>
+<button onclick="eat()">ĂN</button>
+<button onclick="checkWeightApple()">KIỂM TRA TÁO</button>
+<button onclick="getInfoHuman()">KIỂM TRA BẢN THÂN</button>
+
+<script>
+    class Apple {
+        constructor(weight) {
+            this.weight = weight;
+        }
+
+        setWeight(weight) {
+            this.weight = weight;
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+
+        decrease() {
+            this.weight--;
+        }
+    }
+
+    class Human {
+        constructor(name, gender, weight, weightApple) {
+            this.name = name;
+            this.gender = gender;
+            this.weightHuman = weight;
+            this.weightApple = weightApple;
+        }
+
+        setName(name) {
+            this.name = name;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        setGender(gender) {
+            this.gender = gender;
+        }
+
+        getGender() {
+            return this.gender;
+        }
+
+        setWeightHuman(weight) {
+            this.weightHuman = weight;
+        }
+
+        getWeightHuman() {
+            return this.weightHuman;
+        }
+
+        setWeightApple(apple) {
+            this.weightApple = apple;
+        }
+
+        checkWeightApple() {
+            alert("Khối lượng của quả táo : " + this.weightApple.getWeight());
+
+        }
+
+        eat() {
+            if (this.weightApple.getWeight() > 0) {
+                this.weightApple.decrease();
+                this.weightHuman++;
+                alert("Sau khi ăn 1 miếng táo, cân nặng của bạn tăng : " + this.weightHuman +
+                    " Số táo còn lại là " + this.weightApple.getWeight());
+            } else {
+                alert("Táo đã hết")
+            }
+        }
+
+        say() {
+            alert("Helloooo everybody !!!")
+        }
+
+        getInfoHuman() {
+            alert("Tên : " + this.name + ", giới tính : " + this.gender + ", cân nặng : " + this.weightHuman);
+        }
+    }
+
+    let apple = new Apple();
+    apple.setWeight(10);
+    let human = new Human();
+    human.setName("Vũ");
+    human.setGender("Đàn ông");
+    human.setWeightHuman(60);
+
+    function say() {
+        human.say();
+    }
+
+    function eat() {
+        human.eat();
+    }
+
+    function checkWeightApple() {
+        human.setWeightApple(apple);
+        human.checkWeightApple();
+    }
+
+    function getInfoHuman() {
+        human.getInfoHuman();
+    }
+</script>
+</body>
+</html>

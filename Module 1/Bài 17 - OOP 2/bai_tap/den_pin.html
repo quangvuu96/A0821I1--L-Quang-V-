@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đèn pin</title>
+</head>
+<body>
+<button onclick="turnOn()">Bật đèn</button>
+<button onclick="turnOff()">Tắt đèn</button>
+<button onclick="getBattery()">Hiển thị pin</button>
+<script>
+    class Battery {
+        constructor(energy) {
+            this.energy = energy;
+        }
+
+        setEnergy(energy) {
+            this.energy = energy;
+        }
+
+        getEnergy() {
+            return this.energy
+        }
+
+        decreaseEnergy() {
+            if (this.energy > 0) {
+                this.energy--;
+            }
+        }
+    }
+    class FlashLamp {
+        constructor(battery) {
+            this.battery = battery;
+            this.status = true;
+        }
+        setBattery(battery) {
+            this.battery = battery;
+        }
+        getBattery() {
+            alert("Pin hiện đang là : " + this.battery.getEnergy());
+            return this.battery.getEnergy();
+        }
+        light() {
+            if(this.status) {
+                alert("Đèn đang sáng");
+                flashLamp.battery.decreaseEnergy();
+            } else {
+                alert("Đèn tắt")
+            }
+        }
+        tunrOn() {
+            this.status = true;
+        }
+        turnOff() {
+            this.status = false;
+        }
+    }
+    function turnOn() {
+        flashLamp.tunrOn();
+        flashLamp.light();
+    }
+    function turnOff() {
+        alert("Đèn tắt");
+        flashLamp.turnOff();
+    }
+    function getBattery() {
+        flashLamp.getBattery();
+    }
+    let battery = new Battery();
+    battery.setEnergy(20);
+    let flashLamp = new FlashLamp();
+    flashLamp.setBattery(battery);
+
+</script>
+</body>
+</html>

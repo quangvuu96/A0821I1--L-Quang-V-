@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Công tắc Bóng đèn</title>
+    <style>
+        button {
+            background-color: gray;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<button onclick="switchOn()">BẬT</button>
+<button onclick="switchOff()">TẮT</button>
+<button onclick="connectToLamp()">KẾT NỐI</button>
+<script>
+    class ElectricLamp {
+        constructor() {
+            this.status = false;
+        }
+
+        turnOff() {
+            alert("Đèn tắt");
+            return this.status = false;
+        }
+
+        turnOn() {
+            alert("Đèn sáng");
+            return this.status = true;
+        }
+    }
+
+    class SwitchButton {
+        constructor() {
+            this.lamp = null;
+            this.connectStatus = false;
+        }
+
+        connectToLamp(lamp) {
+            this.lamp = lamp;
+            this.connectStatus = true;
+            alert("Đã kết nối")
+        }
+
+        switchOn() {
+            if (this.connectStatus === false) {
+                alert("Chưa kết nối ")
+            } else {
+                this.connectStatus = true;
+                this.lamp.turnOn();
+            }
+        }
+
+        switchOff() {
+            if (this.connectStatus === false) {
+                alert("Chưa kết nối ")
+            } else {
+                this.connectStatus = true;
+                this.lamp.turnOff();
+            }
+        }
+    }
+
+    let lamp = new ElectricLamp()
+    let switchS = new SwitchButton()
+
+    function connectToLamp() {
+        switchS.connectToLamp(lamp);
+    }
+
+    function switchOn() {
+        switchS.switchOn();
+    }
+
+    function switchOff() {
+        switchS.switchOff();
+    }
+</script>
+</body>
+</html>
