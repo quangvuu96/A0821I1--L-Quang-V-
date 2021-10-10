@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XỔ SỐ</title>
+    <style>
+        input {
+            padding: 30px 10px;
+            border-radius: 50%;
+            border: 5px solid red;
+            text-align: center;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<h1 style="text-align: center;padding: 30px;background-color: gray">VIETLOT</h1>
+<div style="text-align: center">
+    <input id="choose1" type="number" min="0" max="99">
+    <input id="choose2" type="number" min="0" max="99">
+    <input id="choose3" type="number" min="0" max="99">
+    <input id="choose4" type="number" min="0" max="99">
+    <input id="choose5" type="number" min="0" max="99">
+    <input id="choose6" type="number" min="0" max="99">
+    <br>
+    <br>
+    <input id="check1" type="number" min="0" max="99">
+    <input id="check2" type="number" min="0" max="99">
+    <input id="check3" type="number" min="0" max="99">
+    <input id="check4" type="number" min="0" max="99">
+    <input id="check5" type="number" min="0" max="99">
+    <input id="check6" type="number" min="0" max="99">
+    <br>
+    <br>
+    <button onclick="random()">MUA VÉ NGẪU NHIÊN</button>
+    <button onclick="confirmNum()">XÁC NHẬN MUA VÉ</button>
+    <button onclick="check()">XEM KẾT QUẢ</button>
+
+</div>
+<script>
+    class Num {
+        constructor(num1, num2, num3, num4, num5, num6) {
+            this.num1 = num1;
+            this.num2 = num2;
+            this.num3 = num3;
+            this.num4 = num4;
+            this.num5 = num5;
+            this.num6 = num6;
+        }
+
+        getNum1() {
+            return this.num1;
+        }
+
+        getNum2() {
+            return this.num2;
+        }
+
+        getNum3() {
+            return this.num3;
+        }
+
+        getNum4() {
+            return this.num4;
+        }
+
+        getNum5() {
+            return this.num5;
+        }
+
+        getNum6() {
+            return this.num6;
+        }
+        setNum1() {
+            this.num1 = parseInt(document.getElementById('choose1').value);
+        }
+        setNum2() {
+            this.num2 = parseInt(document.getElementById('choose2').value);
+        }
+        setNum3() {
+            this.num3 = parseInt(document.getElementById('choose3').value);
+        }
+        setNum4() {
+            this.num4 = parseInt(document.getElementById('choose4').value);
+        }
+        setNum5() {
+            this.num5 = parseInt(document.getElementById('choose5').value);
+        }
+        setNum6() {
+            this.num6 = parseInt(document.getElementById('choose6').value);
+        }
+        randomNum() {
+            this.num1 = Math.floor(Math.random() * 100);
+            this.num2 = Math.floor(Math.random() * 100);
+            this.num3 = Math.floor(Math.random() * 100);
+            this.num4 = Math.floor(Math.random() * 100);
+            this.num5 = Math.floor(Math.random() * 100);
+            this.num6 = Math.floor(Math.random() * 100);
+        }
+
+        display() {
+            document.getElementById('choose1').value = this.num1;
+            document.getElementById('choose2').value = this.num2;
+            document.getElementById('choose3').value = this.num3;
+            document.getElementById('choose4').value = this.num4;
+            document.getElementById('choose5').value = this.num5;
+            document.getElementById('choose6').value = this.num6;
+        }
+
+        displayRs(num) {
+            document.getElementById('check1').value = num.getNum1();
+            document.getElementById('check2').value = num.getNum2();
+            document.getElementById('check3').value = num.getNum3();
+            document.getElementById('check4').value = num.getNum4();
+            document.getElementById('check5').value = num.getNum5();
+            document.getElementById('check6').value = num.getNum6();
+        }
+
+
+        compare(num) {
+            if (this.num1 === num.getNum1()
+                && this.num2 === num.getNum2()
+                && this.num3 === num.getNum3()
+                && this.num4 === num.getNum4()
+                && this.num5 === num.getNum5()
+                && this.num6 === num.getNum6()) {
+                alert("Chúc mừng bạn đã trúng giải nhất");
+            } else if (this.num2 === num.getNum2()
+                && this.num3 === num.getNum3()
+                && this.num4 === num.getNum4()
+                && this.num5 === num.getNum5()
+                && this.num6 === num.getNum6()) {
+                alert("Chúc mừng bạn đã trúng giải nhì");
+            } else if (this.num4 === num.getNum4()
+                && this.num5 === num.getNum5()
+                && this.num6 === num.getNum6()) {
+                alert("Chúc mừng bạn đã trúng giải ba");
+            } else if (this.num5 === num.getNum5()
+                && this.num6 === num.getNum6()) {
+                alert("Chúc mừng bạn đã trúng giải khuyến khích");
+            } else {
+                alert("Chúc bạn may mắn lần sauu !!")
+            }
+        }
+    }
+
+    let num = new Num(0, 0, 0, 0, 0, 0);
+    let numCheck = new Num(0, 0, 0, 0, 0,0);
+
+    function random() {
+        num.randomNum();
+        num.display();
+        console.log(num)
+    }
+
+    function check() {
+        numCheck.randomNum();
+        numCheck.displayRs(numCheck);
+        num.compare(numCheck);
+
+        console.log(numCheck)
+    }
+
+    function confirmNum() {
+        num.setNum1();
+        num.setNum2();
+        num.setNum3();
+        num.setNum4();
+        num.setNum5();
+        num.setNum6();
+        alert("Bạn đã xác nhận mua vé");
+        console.log(num);
+    }
+</script>
+</body>
+</html>

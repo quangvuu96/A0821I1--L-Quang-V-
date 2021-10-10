@@ -19,7 +19,7 @@
         }
 
         getEnergy() {
-            return this.energy
+            return this.energy;
         }
 
         decreaseEnergy() {
@@ -41,9 +41,9 @@
             return this.battery.getEnergy();
         }
         light() {
-            if(this.status) {
+            if(this.status && this.getBattery() > 0) {
                 alert("Đèn đang sáng");
-                flashLamp.battery.decreaseEnergy();
+              this.battery.decreaseEnergy();
             } else {
                 alert("Đèn tắt")
             }
@@ -67,7 +67,7 @@
         flashLamp.getBattery();
     }
     let battery = new Battery();
-    battery.setEnergy(20);
+    battery.setEnergy(10);
     let flashLamp = new FlashLamp();
     flashLamp.setBattery(battery);
 
