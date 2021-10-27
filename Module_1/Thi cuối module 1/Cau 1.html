@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 1</title>
+</head>
+<body>
+
+<script>
+    let n = parseInt(prompt("Nhập n số phần tử của danh sách : "));
+    let arr = new Array(n);
+    let sumEven = 0;
+    let sumOdd = 0;
+    let result;
+    for (let i = 0; i < n; i++) {
+        arr[i] = parseInt(prompt("Nhập phần tử tại ví trí " + i + " của danh sách : "));
+    }
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 == 0) {
+            sumEven += arr[i];
+        } else {
+            sumOdd += arr[i];
+        }
+    }
+    result = sumEven - sumOdd;
+    document.write("Mảng đã nhập là : " + arr);
+    document.write("<br>");
+    document.write("Số lượng phần tử đã nhập vào là " + arr.length);
+    document.write("<br>");
+    document.write("Hiệu của Tổng số chẵn và Tổng số lẻ là : " + sumEven + " - " + sumOdd + " = " + result);
+</script>
+</body>
+</html>

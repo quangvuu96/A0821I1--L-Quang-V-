@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 3</title>
+</head>
+<body>
+<script>
+    function checkNum(num) {
+        if (num <= 1) {
+            return false;
+        }
+        for (let i = 2; i < num; i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    function checkArr(arr) {
+        let n = parseInt(prompt("Nhập số lượng phần tử của mảng"));
+        arr = new Array(n);
+        let arrResult = [];
+        for (let i = 0; i < n; i++) {
+            arr[i] = parseInt(prompt("Nhập phần tử của mảng tại vị trí " + i));
+        }
+        for (let i = 0; i < arr.length; i++) {
+            if (checkNum(arr[i]) === true) {
+                arrResult.push(arr[i]);
+            }
+        }
+        arrResult.sort(function (a, b) {
+            return a - b;
+        })
+        document.write(arrResult);
+        return arrResult;
+    }
+
+    checkArr();
+
+
+</script>
+</body>
+</html>

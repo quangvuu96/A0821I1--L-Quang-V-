@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 2</title>
+</head>
+<body>
+
+<script>
+    function checkUpper(str) {
+        str = prompt("Nhập 1 chuỗi bất kì: ");
+        let arr = str.split("");
+        let count = 0;
+        for (let i = 0; i < str.length; i++) {
+            if (arr[i] === arr[i].toUpperCase() && arr[i] !== " ") {
+                count++;
+            }
+        }
+        if (count > 0) {
+            document.write("Số kí tự in hoa trong chuỗi là : " + count);
+        } else if (count == 0) {
+            document.write("The Strings is not contain upper char");
+        }
+    }
+
+    checkUpper();
+</script>
+</body>
+</html>

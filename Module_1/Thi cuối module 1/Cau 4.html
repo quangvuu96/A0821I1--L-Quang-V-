@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 4</title>
+    <style>
+        td {
+            border-collapse: collapse;
+            border: 1px solid black;
+            padding: 5px;
+            text-align: left;
+        }
+
+        th {
+            border-collapse: collapse;
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        tr:nth-child(even) {
+            background-color: wheat;
+        }
+
+        button {
+            width: 60px;
+            height: 35px;
+            background-color: darkgray;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<h3>Add new product</h3>
+<input type="text" id="new">
+<button onclick="addNewMobile()">Add</button>
+
+<div id="displayTable"></div>
+<script>
+    class Mobile {
+        constructor(id, name, brand, price) {
+            this.id = id;
+            this.name = name;
+            this.brand = brand;
+            this.price = price;
+        }
+
+        setId(id) {
+            this.id = id;
+        }
+
+        getId() {
+            return this.id;
+        }
+
+        setName(name) {
+            this.name = name;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        setBrand(brand) {
+            this.brand = brand;
+        }
+
+        getBrand() {
+            return this.brand;
+        }
+
+        setPrice(price) {
+            this.price = price;
+        }
+
+        getPrice() {
+            return this.price;
+        }
+
+        toString() {
+            alert(" ID : " + this.id + "\n Tên điện thoại : " + this.name + "\n Hãng điện thoại : " + this.brand + "\n Giá : " + this.price);
+        }
+    }
+    let iphone = new Mobile(1, "Iphone 13 Pro Max", "Apple" ,"1000 đô");
+    let listProduct = [iphone];
+
+    function addNewMobile() {
+        let newMobile = document.getElementById("new").value;
+        if (newMobile == "") {
+            alert("Please input mobile name");
+        } else {
+            let mobile = new Mobile(newMobile);
+            mobile.setId(prompt("Nhập ID: "));
+            mobile.setName(prompt("Nhập tên điện thoại: "));
+            mobile.setBrand(prompt("Nhập hãng: "));
+            mobile.setPrice(prompt("Nhập giá: "));
+            listProduct.push(mobile);
+            alert("Add new mobile: " + mobile.getName() + " OK!");
+            document.getElementById("new").value = "";
+            listProduct.sort(function(a, b){
+                let str1 = a.getName().toLowerCase(), str2 = b.getName().toLowerCase();
+                if (str1 < str2)
+                    return -1;
+                if (str1 > str2)
+                    return 1;
+                return 0;
+            });
+            display();
+        }
+
+    }
+
+    function display() {
+        let html =
+            "<table style='border: 1px solid black;border-collapse: collapse'>" +
+            "    <tr>\n" +
+            "        <th>Product name</th>\n" +
+            "        <th>Edit</th>\n" +
+            "    </tr>\n";
+
+        for (let i = 0; i < listProduct.length; i++) {
+            html = html +
+                "    <tr>\n" +
+                "        <td>" + listProduct[i].getName() + "</td>\n" +
+                "        <td><button onclick='editProduct(" + i + ")'>Edit</button></td>\n" +
+                "    </tr>\n";
+        }
+
+        html = html +
+            "</table>";
+
+        document.getElementById("displayTable").innerHTML = html;
+    }
+
+    display();
+
+    function editProduct(index) {
+        listProduct[index].setName(prompt("Mời bạn nhập tên mới : "));
+        display();
+    }
+</script>
+</body>
+</html>
