@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="80ee63d5-ac33-4d93-bd8d-67abfce3a65e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module_2/ss1_introduce_java/thuc_hanh_SystemTime.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module_2/ss1_introduce_java/thuc_hanh_khaibaobien.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module_2/ss1_introduce_java/thuc_hanh_sudungtoantu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module_2/ss1_introduce_java/thuchanh_ptbacnhat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss1_introduce_java/thuc_hanh_SystemTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/s1_introduce_java/practice/SystemTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss1_introduce_java/thuc_hanh_khaibaobien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/s1_introduce_java/practice/DeclareVariable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss1_introduce_java/thuc_hanh_sudungtoantu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/s1_introduce_java/practice/UseOperator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss1_introduce_java/thuchanh_ptbacnhat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/s1_introduce_java/practice/FirstEquation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module_2/s1_introduce_java/exercise/ConverseMoney.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/s1_introduce_java/exercise/ConverseMoney.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/s1_introduce_java/exercise/ConvertMoney.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,13 +37,13 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Application.ConverseMoney">
-    <configuration name="ConverseMoney" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s1_introduce_java.exercise.ConverseMoney" />
+  <component name="RunManager" selected="Application.PrimeLessThan100">
+    <configuration name="DesignMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="s2_loop_in_java.practice.DesignMenu" />
       <module name="Module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="s1_introduce_java.exercise.*" />
+          <option name="PATTERN" value="s2_loop_in_java.practice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -57,12 +51,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DisplayHello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s1_introduce_java.exercise.DisplayHello" />
+    <configuration name="DisplayShape" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="s2_loop_in_java.exercise.DisplayShape" />
       <module name="Module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="s1_introduce_java.exercise.*" />
+          <option name="PATTERN" value="s2_loop_in_java.exercise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -70,12 +64,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="thuchanh_bmi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s1_introduce_java_practice.thuchanh_bmi" />
+    <configuration name="First20Primes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="s2_loop_in_java.exercise.First20Primes" />
       <module name="Module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="s1_introduce_java_practice.*" />
+          <option name="PATTERN" value="s2_loop_in_java.exercise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,12 +77,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="thuchanh_countday" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s1_introduce_java_practice.thuchanh_countday" />
+    <configuration name="GreatestCommonFactor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="s2_loop_in_java.practice.GreatestCommonFactor" />
       <module name="Module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="s1_introduce_java_practice.*" />
+          <option name="PATTERN" value="s2_loop_in_java.practice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,12 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="thuchanh_ptbacnhat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s1_introduce_java_practice.thuchanh_ptbacnhat" />
+    <configuration name="PrimeLessThan100" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="s2_loop_in_java.exercise.PrimeLessThan100" />
       <module name="Module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="s1_introduce_java_practice.*" />
+          <option name="PATTERN" value="s2_loop_in_java.exercise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,24 +103,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ConverseMoney" />
-        <item itemvalue="Application.DisplayHello" />
-        <item itemvalue="Application.thuchanh_bmi" />
-        <item itemvalue="Application.thuchanh_countday" />
-        <item itemvalue="Application.thuchanh_ptbacnhat" />
+        <item itemvalue="Application.PrimeLessThan100" />
+        <item itemvalue="Application.First20Primes" />
+        <item itemvalue="Application.DisplayShape" />
+        <item itemvalue="Application.DesignMenu" />
+        <item itemvalue="Application.GreatestCommonFactor" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +136,8 @@
       <updated>1635345128856</updated>
       <workItem from="1635345131181" duration="1492000" />
       <workItem from="1635346812136" duration="7433000" />
-      <workItem from="1635431069948" duration="1618000" />
+      <workItem from="1635431069948" duration="20013000" />
+      <workItem from="1635529068543" duration="2218000" />
     </task>
     <servers />
   </component>
@@ -177,6 +174,14 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/s2_loop_in_java/practice/DesignMenu.java</url>
+          <line>5</line>
+          <properties class="s2_loop_in_java.practice.DesignMenu" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

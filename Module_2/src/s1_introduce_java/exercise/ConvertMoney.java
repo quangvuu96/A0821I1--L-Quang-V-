@@ -2,7 +2,7 @@ package s1_introduce_java.exercise;
 
 import java.util.Scanner;
 
-public class ConverseMoney {
+public class ConvertMoney {
     public static void main(String[] args) {
         double usd;
         Scanner sc = new Scanner(System.in);
