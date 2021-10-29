@@ -1,8 +1,8 @@
-package ss1_introduce_java;
+package s1_introduce_java.practice;
 
 import java.util.Scanner;
 
-public class thuchanh_ptbacnhat {
+public class FirstEquation {
     public static void main(String[] args) {
         System.out.println("Linear  Equation Resolver");
         System.out.println("Give a equation as 'a*x + b = c' , please enter constants: ");

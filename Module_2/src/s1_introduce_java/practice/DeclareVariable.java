@@ -1,6 +1,6 @@
-package ss1_introduce_java;
+package s1_introduce_java.practice;
 
-public class thuc_hanh_khaibaobien {
+public class DeclareVariable {
     public static void main(String[] args) {
         int i = 10;
         float f = 20.5f;

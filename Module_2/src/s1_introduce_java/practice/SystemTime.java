@@ -1,8 +1,8 @@
-package ss1_introduce_java;
+package s1_introduce_java.practice;
 
 import java.util.Date;
 
-public class thuc_hanh_SystemTime {
+public class SystemTime {
     public static void main(String[] args) {
         Date now = new Date();
         System.out.println("Now is " + now);

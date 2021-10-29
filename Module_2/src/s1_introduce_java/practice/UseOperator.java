@@ -1,8 +1,8 @@
-package ss1_introduce_java;
+package s1_introduce_java.practice;
 
 import java.util.Scanner;
 
-public class thuc_hanh_sudungtoantu {
+public class UseOperator {
     public static void main(String[] args) {
         float width;
         float height;
