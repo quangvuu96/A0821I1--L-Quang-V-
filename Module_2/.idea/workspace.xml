@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="80ee63d5-ac33-4d93-bd8d-67abfce3a65e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module_2/s1_introduce_java/exercise/ConverseMoney.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/s1_introduce_java/exercise/ConverseMoney.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/s1_introduce_java/exercise/ConvertMoney.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,12 +12,20 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/quangvuu96/A0821I1--Le-Quang-Vu" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="205r88oCCFJvs70WYYuA6RiJk3Q" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -32,18 +38,26 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Application.PrimeLessThan100">
-    <configuration name="DesignMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s2_loop_in_java.practice.DesignMenu" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\QuangVu\cntt\A0821I1\Module_2\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.CountCharacter">
+    <configuration name="ColumnTotal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="s3_array_and_method.exercise.ColumnTotal" />
       <module name="Module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="s2_loop_in_java.practice.*" />
+          <option name="PATTERN" value="s3_array_and_method.exercise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -51,12 +65,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DisplayShape" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s2_loop_in_java.exercise.DisplayShape" />
+    <configuration name="CountCharacter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="s3_array_and_method.exercise.CountCharacter" />
       <module name="Module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="s2_loop_in_java.exercise.*" />
+          <option name="PATTERN" value="s3_array_and_method.exercise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -64,12 +78,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="First20Primes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s2_loop_in_java.exercise.First20Primes" />
+    <configuration name="MinArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="s3_array_and_method.exercise.MinArray" />
       <module name="Module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="s2_loop_in_java.exercise.*" />
+          <option name="PATTERN" value="s3_array_and_method.exercise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,12 +91,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GreatestCommonFactor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s2_loop_in_java.practice.GreatestCommonFactor" />
+    <configuration name="StudentPassed" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="s3_array_and_method.practice.StudentPassed" />
       <module name="Module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="s2_loop_in_java.practice.*" />
+          <option name="PATTERN" value="s3_array_and_method.practice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,12 +104,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrimeLessThan100" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s2_loop_in_java.exercise.PrimeLessThan100" />
+    <configuration name="SumMainDiagonal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="s3_array_and_method.exercise.SumMainDiagonal" />
       <module name="Module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="s2_loop_in_java.exercise.*" />
+          <option name="PATTERN" value="s3_array_and_method.exercise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PrimeLessThan100" />
-        <item itemvalue="Application.First20Primes" />
-        <item itemvalue="Application.DisplayShape" />
-        <item itemvalue="Application.DesignMenu" />
-        <item itemvalue="Application.GreatestCommonFactor" />
+        <item itemvalue="Application.CountCharacter" />
+        <item itemvalue="Application.SumMainDiagonal" />
+        <item itemvalue="Application.ColumnTotal" />
+        <item itemvalue="Application.StudentPassed" />
+        <item itemvalue="Application.MinArray" />
       </list>
     </recent_temporary>
   </component>
@@ -138,6 +152,8 @@
       <workItem from="1635346812136" duration="7433000" />
       <workItem from="1635431069948" duration="20013000" />
       <workItem from="1635529068543" duration="2218000" />
+      <workItem from="1635700180082" duration="8963000" />
+      <workItem from="1635860274891" duration="8550000" />
     </task>
     <servers />
   </component>
@@ -182,6 +198,11 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/s3_array_and_method/exercise/SumMainDiagonal.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
