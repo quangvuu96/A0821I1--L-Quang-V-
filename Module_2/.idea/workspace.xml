@@ -51,20 +51,7 @@
       <recent name="E:\QuangVu\cntt\A0821I1\Module_2\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CountCharacter">
-    <configuration name="ColumnTotal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s3_array_and_method.exercise.ColumnTotal" />
-      <module name="Module_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="s3_array_and_method.exercise.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="CountCharacter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="s3_array_and_method.exercise.CountCharacter" />
       <module name="Module_2" />
@@ -78,12 +65,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MinArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s3_array_and_method.exercise.MinArray" />
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="s4_class_and_object.exercise.quadratic_equation.Main" />
       <module name="Module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="s3_array_and_method.exercise.*" />
+          <option name="PATTERN" value="s4_class_and_object.exercise.quadratic_equation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,12 +78,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentPassed" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s3_array_and_method.practice.StudentPassed" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="s4_class_and_object.practice.Main" />
       <module name="Module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="s3_array_and_method.practice.*" />
+          <option name="PATTERN" value="s4_class_and_object.practice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,26 +104,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="s4_class_and_object.exercise.quadraticEquation.test" />
+      <module name="Module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="s4_class_and_object.exercise.quadratic_equation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.test" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.CountCharacter" />
         <item itemvalue="Application.SumMainDiagonal" />
-        <item itemvalue="Application.ColumnTotal" />
-        <item itemvalue="Application.StudentPassed" />
-        <item itemvalue="Application.MinArray" />
       </list>
     </recent_temporary>
   </component>
@@ -154,6 +152,7 @@
       <workItem from="1635529068543" duration="2218000" />
       <workItem from="1635700180082" duration="8963000" />
       <workItem from="1635860274891" duration="8550000" />
+      <workItem from="1635930466391" duration="13161000" />
     </task>
     <servers />
   </component>
@@ -203,6 +202,16 @@
           <url>file://$PROJECT_DIR$/src/s3_array_and_method/exercise/SumMainDiagonal.java</url>
           <line>24</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/s4_class_and_object/exercise/quadratic_equation/Main.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/s4_class_and_object/a/a.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
