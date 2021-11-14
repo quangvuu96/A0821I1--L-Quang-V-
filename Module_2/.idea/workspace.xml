@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80ee63d5-ac33-4d93-bd8d-67abfce3a65e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/s7_abtract_class_interface/practice/interfaceEdibleAnimal/Apple.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module_2/s5_access_modifier/exercise/student/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module_2/s5_access_modifier/exercise/student/Test.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +14,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -60,26 +61,13 @@
       <recent name="E:\QuangVu\cntt\A0821I1\Module_2\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test (3)">
-    <configuration name="SquareTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s6_inheritance.practice.createSquare.SquareTest" />
-      <module name="Module_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="s6_inheritance.practice.createSquare.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Test (2)">
     <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s6_inheritance.exercise.circleCylinder.Test" />
+      <option name="MAIN_CLASS_NAME" value="s7_abtract_class_interface.practice.interfaceComparator.Test" />
       <module name="Module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="s6_inheritance.exercise.circleCylinder.*" />
+          <option name="PATTERN" value="s7_abtract_class_interface.practice.interfaceComparator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,11 +76,11 @@
       </method>
     </configuration>
     <configuration name="Test (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s6_inheritance.exercise.pointMoveablePoint.Test" />
+      <option name="MAIN_CLASS_NAME" value="s7_abtract_class_interface.exercise.colorable.Test" />
       <module name="Module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="s6_inheritance.exercise.pointMoveablePoint.*" />
+          <option name="PATTERN" value="s7_abtract_class_interface.exercise.colorable.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,12 +88,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s6_inheritance.exercise.designTriangle.Test" />
+    <configuration name="Test (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="s7_abtract_class_interface.practice.interfaceEdibleAnimal.Test" />
       <module name="Module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="s6_inheritance.exercise.designTriangle.*" />
+          <option name="PATTERN" value="s7_abtract_class_interface.practice.interfaceEdibleAnimal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="s7_abtract_class_interface.practice.interfaceComparable.Test" />
+      <module name="Module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="s7_abtract_class_interface.practice.interfaceComparable.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,11 +115,11 @@
       </method>
     </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s6_inheritance.exercise.point2D3D.Test" />
+      <option name="MAIN_CLASS_NAME" value="s7_abtract_class_interface.exercise.resizeable.Test" />
       <module name="Module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="s6_inheritance.exercise.point2D3D.*" />
+          <option name="PATTERN" value="s7_abtract_class_interface.exercise.resizeable.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,26 +127,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test (3)" />
         <item itemvalue="Application.Test (2)" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.Test (1)" />
-        <item itemvalue="Application.SquareTest" />
+        <item itemvalue="Application.Test (5)" />
+        <item itemvalue="Application.Test (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -169,6 +168,7 @@
       <workItem from="1636375420333" duration="3751000" />
       <workItem from="1636548312826" duration="7756000" />
       <workItem from="1636714181813" duration="1532000" />
+      <workItem from="1636898489316" duration="8883000" />
     </task>
     <servers />
   </component>
@@ -238,6 +238,11 @@
           <url>file://$PROJECT_DIR$/src/s6_inheritance/exercise/designTriangle/Triangle.java</url>
           <line>45</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/s7_abtract_class_interface/exercise/resizeable/Test.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
