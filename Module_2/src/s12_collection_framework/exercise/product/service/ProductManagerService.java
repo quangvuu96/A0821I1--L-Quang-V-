@@ -19,6 +19,7 @@ public class ProductManagerService implements IProductManager {
         int price = Integer.parseInt(scanner.nextLine());
         Product product = new Product(id, nameProduct, price);
         productArrayList.add(product);
+        System.out.println("Created successful !");
     }
 
     @Override
@@ -32,6 +33,8 @@ public class ProductManagerService implements IProductManager {
                 productArrayList.get(i).setNameProduct(scanner.nextLine());
                 System.out.println("Enter price : ");
                 productArrayList.get(i).setPrice(Integer.parseInt(scanner.nextLine()));
+
+                System.out.println("Edited successful !");
                 check = false;
                 break;
             }
@@ -43,8 +46,8 @@ public class ProductManagerService implements IProductManager {
     public void deleteProduct() {
         System.out.println("Enter ID : ");
         int inputDelete = Integer.parseInt(scanner.nextLine());
-
-        for (int i = 0; i < productArrayList.size(); i++) {
+        int size = productArrayList.size();
+        for (int i = 0; i < size; i++) {
             if(productArrayList.get(i).getId() == inputDelete) {
                 productArrayList.remove(i);
                 break;
@@ -64,7 +67,8 @@ public class ProductManagerService implements IProductManager {
     public void searchProduct() {
         System.out.println("Enter Product name : ");
         String name = scanner.nextLine();
-        for (int i = 0; i < productArrayList.size(); i++) {
+        int size = productArrayList.size();
+        for (int i = 0; i < size; i++) {
             if(productArrayList.get(i).getNameProduct().contains(name)) {
                 System.out.println(productArrayList.get(i).toString());
             }
@@ -75,5 +79,6 @@ public class ProductManagerService implements IProductManager {
     public void sortProduct() {
         Collections.sort(productArrayList, new ProductSort());
     }
+
 
 }

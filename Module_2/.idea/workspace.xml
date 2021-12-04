@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="80ee63d5-ac33-4d93-bd8d-67abfce3a65e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module_2/s11_dsa_stack_queue/exercise/mapCount/CountString.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module_2/s11_dsa_stack_queue/exercise/mapCount/CountString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module_2/s12_collection_framework/exercise/product/controller/ProductView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module_2/s12_collection_framework/exercise/product/controller/ProductView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module_2/s12_collection_framework/exercise/product/service/ProductManagerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module_2/s12_collection_framework/exercise/product/service/ProductManagerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/s12_collection_framework/exercise/product/controller/ProductView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/s12_collection_framework/exercise/product/controller/ProductView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/s12_collection_framework/exercise/product/service/IProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/s12_collection_framework/exercise/product/service/IProductManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/s12_collection_framework/exercise/product/service/ProductManagerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/s12_collection_framework/exercise/product/service/ProductManagerService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,13 +66,39 @@
       <recent name="E:\QuangVu\cntt\A0821I1\Module_2\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ProductView">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s12_collection_framework.practice.comparableComparator.Main" />
+  <component name="RunManager" selected="Application.CheckTriangle">
+    <configuration name="CalculationExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="s15_exception_debug.practice.numberFormatException.CalculationExample" />
       <module name="Module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="s12_collection_framework.practice.comparableComparator.*" />
+          <option name="PATTERN" value="s15_exception_debug.practice.numberFormatException.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckTriangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="s15_exception_debug.exercise.CheckTriangle" />
+      <module name="Module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="s15_exception_debug.exercise.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InsertionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="s14_sorting_algorithms.exercise.InsertionSort" />
+      <module name="Module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="s14_sorting_algorithms.exercise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,11 +107,11 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s12_collection_framework.practice.hashMapAndHashSet.Main" />
+      <option name="MAIN_CLASS_NAME" value="s15_exception_debug.practice.outOfBounds.Main" />
       <module name="Module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="s12_collection_framework.practice.hashMapAndHashSet.*" />
+          <option name="PATTERN" value="s15_exception_debug.practice.outOfBounds.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,32 +132,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s12_collection_framework.practice.listStudents.TestMap" />
-      <module name="Module_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="s12_collection_framework.practice.listStudents.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestMyStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s11_dsa_stack_queue.practice.stackArray.TestMyStack" />
-      <module name="Module_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="s11_dsa_stack_queue.practice.stackArray.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -141,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CheckTriangle" />
         <item itemvalue="Application.ProductView" />
+        <item itemvalue="Application.CalculationExample" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.TestMap" />
-        <item itemvalue="Application.TestMyStack" />
+        <item itemvalue="Application.InsertionSort" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +181,11 @@
       <workItem from="1637572105058" duration="6468000" />
       <workItem from="1637744154269" duration="15450000" />
       <workItem from="1638098857773" duration="13016000" />
-      <workItem from="1638256219857" duration="3166000" />
+      <workItem from="1638256219857" duration="15070000" />
+      <workItem from="1638523412638" duration="136000" />
+      <workItem from="1638524553361" duration="6417000" />
+      <workItem from="1638539239275" duration="2468000" />
+      <workItem from="1638598562935" duration="3933000" />
     </task>
     <servers />
   </component>
@@ -231,6 +239,14 @@
           </properties>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/s14_sorting_algorithms/practice/bubbleSort/BubbleSortTest.java</url>
+          <line>5</line>
+          <properties class="s14_sorting_algorithms.practice.bubbleSort.BubbleSortTest" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/s3_array_and_method/exercise/SumMainDiagonal.java</url>
           <line>24</line>
@@ -282,9 +298,19 @@
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/s12_collection_framework/exercise/product/controller/ProductView.java</url>
-          <line>7</line>
-          <option name="timeStamp" value="19" />
+          <url>file://$PROJECT_DIR$/src/s13_searching_algorithms/practice/BinarySearch.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/s14_sorting_algorithms/exercise/InsertionSort.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/s15_exception_debug/exercise/CheckTriangle.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

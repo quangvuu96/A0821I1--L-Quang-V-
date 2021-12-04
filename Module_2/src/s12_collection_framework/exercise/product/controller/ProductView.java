@@ -16,8 +16,8 @@ public class ProductView {
         do {
             Scanner scanner = new Scanner(System.in);
             System.out.println("1. Add new product \n " +
-                    "2. Edit product \n " +
-                    "3. Delete product \n " +
+                    "2. Edit a product \n " +
+                    "3. Delete a product \n " +
                     "4. Display list product \n " +
                     "5. Search product \n " +
                     "6. Sort product \n " +
@@ -50,6 +50,5 @@ public class ProductView {
 
             }
         } while (choice > 0 && choice <= 7);
-
     }
 }
