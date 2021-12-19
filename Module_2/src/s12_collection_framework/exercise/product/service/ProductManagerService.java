@@ -12,7 +12,12 @@ public class ProductManagerService implements IProductManager {
 
     @Override
     public void addProduct() {
-        int id = productArrayList.size() + 1;
+        int id;
+        if (productArrayList.size() == 0) {
+            id = 0;
+        } else {
+            id = productArrayList.get(productArrayList.size() - 1).getId() + 1;
+        }
         System.out.println("Enter name of Product : ");
         String nameProduct = scanner.nextLine();
         System.out.println("Enter price of Product : ");
@@ -39,7 +44,7 @@ public class ProductManagerService implements IProductManager {
                 break;
             }
         }
-        if(check) System.out.println("Product not found !!!");
+        if (check) System.out.println("Product not found !!!");
     }
 
     @Override
@@ -48,7 +53,7 @@ public class ProductManagerService implements IProductManager {
         int inputDelete = Integer.parseInt(scanner.nextLine());
         int size = productArrayList.size();
         for (int i = 0; i < size; i++) {
-            if(productArrayList.get(i).getId() == inputDelete) {
+            if (productArrayList.get(i).getId() == inputDelete) {
                 productArrayList.remove(i);
                 break;
             }
@@ -57,7 +62,7 @@ public class ProductManagerService implements IProductManager {
 
     @Override
     public void displayProduct() {
-        for (int i = 0; i < productArrayList.size();i++) {
+        for (int i = 0; i < productArrayList.size(); i++) {
             System.out.println(productArrayList.get(i).toString());
         }
     }
@@ -69,7 +74,7 @@ public class ProductManagerService implements IProductManager {
         String name = scanner.nextLine();
         int size = productArrayList.size();
         for (int i = 0; i < size; i++) {
-            if(productArrayList.get(i).getNameProduct().contains(name)) {
+            if (productArrayList.get(i).getNameProduct().contains(name)) {
                 System.out.println(productArrayList.get(i).toString());
             }
         }

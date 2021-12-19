@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80ee63d5-ac33-4d93-bd8d-67abfce3a65e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Module_2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module_2/s12_collection_framework/exercise/product/controller/ProductView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module_2/s12_collection_framework/exercise/product/controller/ProductView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Module_2/s12_collection_framework/exercise/product/service/ProductManagerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module_2/s12_collection_framework/exercise/product/service/ProductManagerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/s12_collection_framework/exercise/product/controller/ProductView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/s12_collection_framework/exercise/product/controller/ProductView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/s12_collection_framework/exercise/product/service/IProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/s12_collection_framework/exercise/product/service/IProductManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/s12_collection_framework/exercise/product/service/ProductManagerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/s12_collection_framework/exercise/product/service/ProductManagerService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,10 +50,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -65,14 +66,17 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\QuangVu\cntt\A0821I1\Module_2\src" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\QuangVu\cntt\A0821I1\Module_2\src\s16_text_file\exercise\readFile" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.CheckTriangle">
-    <configuration name="CalculationExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s15_exception_debug.practice.numberFormatException.CalculationExample" />
+  <component name="RunManager" selected="Application.FuramaController">
+    <configuration name="AccountExampleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="s19_string_regex.practice.validateAccount.AccountExampleTest" />
       <module name="Module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="s15_exception_debug.practice.numberFormatException.*" />
+          <option name="PATTERN" value="s19_string_regex.practice.validateAccount.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -80,12 +84,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckTriangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s15_exception_debug.exercise.CheckTriangle" />
+    <configuration name="ClassroomNameTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="s19_string_regex.exercise.validateClassroomName.ClassroomNameTest" />
       <module name="Module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="s15_exception_debug.exercise.*" />
+          <option name="PATTERN" value="s19_string_regex.exercise.validateClassroomName.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,12 +97,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InsertionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s14_sorting_algorithms.exercise.InsertionSort" />
+    <configuration name="EmailExampleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="s19_string_regex.practice.validateEmail.EmailExampleTest" />
       <module name="Module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="s14_sorting_algorithms.exercise.*" />
+          <option name="PATTERN" value="s19_string_regex.practice.validateEmail.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,12 +110,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s15_exception_debug.practice.outOfBounds.Main" />
+    <configuration name="FuramaController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="case_study.controllers.FuramaController" />
       <module name="Module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="s15_exception_debug.practice.outOfBounds.*" />
+          <option name="PATTERN" value="case_study.controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,12 +123,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s12_collection_framework.exercise.product.controller.ProductView" />
+    <configuration name="ValidatePhoneNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="s19_string_regex.exercise.validatePhoneNumbers.ValidatePhoneNumbers" />
       <module name="Module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="s12_collection_framework.exercise.product.controller.*" />
+          <option name="PATTERN" value="s19_string_regex.exercise.validatePhoneNumbers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,24 +136,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CheckTriangle" />
-        <item itemvalue="Application.ProductView" />
-        <item itemvalue="Application.CalculationExample" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.InsertionSort" />
+        <item itemvalue="Application.FuramaController" />
+        <item itemvalue="Application.ValidatePhoneNumbers" />
+        <item itemvalue="Application.ClassroomNameTest" />
+        <item itemvalue="Application.AccountExampleTest" />
+        <item itemvalue="Application.EmailExampleTest" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +191,13 @@
       <workItem from="1638523412638" duration="136000" />
       <workItem from="1638524553361" duration="6417000" />
       <workItem from="1638539239275" duration="2468000" />
-      <workItem from="1638598562935" duration="3933000" />
+      <workItem from="1638598562935" duration="5011000" />
+      <workItem from="1639134528147" duration="6273000" />
+      <workItem from="1639392880721" duration="4531000" />
+      <workItem from="1639399078296" duration="2445000" />
+      <workItem from="1639477934682" duration="18535000" />
+      <workItem from="1639737300737" duration="5144000" />
+      <workItem from="1639919133447" duration="9231000" />
     </task>
     <servers />
   </component>
@@ -311,6 +323,17 @@
           <url>file://$PROJECT_DIR$/src/s15_exception_debug/exercise/CheckTriangle.java</url>
           <line>6</line>
           <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/s16_text_file/practice/maxFileNumbers/FindMaxValue.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/s19_string_regex/exercise/validateClassroomName/ClassroomNameTest.java</url>
+          <line>5</line>
+          <properties field="classroomName" class="s19_string_regex.exercise.validateClassroomName.ClassroomNameTest" />
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
