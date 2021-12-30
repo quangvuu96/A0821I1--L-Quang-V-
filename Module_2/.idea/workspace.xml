@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80ee63d5-ac33-4d93-bd8d-67abfce3a65e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Module_2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/final_exam/controllers/AccountView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module_2/s12_collection_framework/exercise/product/service/ProductManagerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module_2/s12_collection_framework/exercise/product/service/ProductManagerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/s12_collection_framework/exercise/product/service/ProductManagerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/s12_collection_framework/exercise/product/service/ProductManagerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/case_study/controllers/FuramaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/controllers/FuramaController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,13 +67,13 @@
       <recent name="E:\QuangVu\cntt\A0821I1\Module_2\src\s16_text_file\exercise\readFile" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FuramaController">
-    <configuration name="AccountExampleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s19_string_regex.practice.validateAccount.AccountExampleTest" />
+  <component name="RunManager" selected="Application.MainClass">
+    <configuration name="AccountView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="final_exam.controllers.AccountView" />
       <module name="Module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="s19_string_regex.practice.validateAccount.*" />
+          <option name="PATTERN" value="final_exam.controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,12 +94,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmailExampleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s19_string_regex.practice.validateEmail.EmailExampleTest" />
+    <configuration name="FuramaController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="case_study.controllers.FuramaController" />
       <module name="Module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="s19_string_regex.practice.validateEmail.*" />
+          <option name="PATTERN" value="case_study.controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,12 +107,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FuramaController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="case_study.controllers.FuramaController" />
+    <configuration name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.MainClass" />
       <module name="Module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="case_study.controllers.*" />
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,26 +133,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainClass" />
+        <item itemvalue="Application.AccountView" />
         <item itemvalue="Application.FuramaController" />
         <item itemvalue="Application.ValidatePhoneNumbers" />
         <item itemvalue="Application.ClassroomNameTest" />
-        <item itemvalue="Application.AccountExampleTest" />
-        <item itemvalue="Application.EmailExampleTest" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +192,8 @@
       <workItem from="1639399078296" duration="2445000" />
       <workItem from="1639477934682" duration="18535000" />
       <workItem from="1639737300737" duration="5144000" />
-      <workItem from="1639919133447" duration="9231000" />
+      <workItem from="1639919133447" duration="10746000" />
+      <workItem from="1639997927634" duration="12220000" />
     </task>
     <servers />
   </component>

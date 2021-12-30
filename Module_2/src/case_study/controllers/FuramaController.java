@@ -1,5 +1,6 @@
 package case_study.controllers;
 
+import case_study.models.Employee;
 import case_study.utils.CommonUtil;
 
 public class FuramaController {
@@ -24,7 +25,6 @@ public class FuramaController {
 
         switch (CommonUtil.getScanner().nextInt()) {
             case 1:
-                displayEmployeeMenu();
                 break;
             case 2:
                 displayCustomerMenu();
@@ -41,15 +41,6 @@ public class FuramaController {
         }
     }
 
-    public static void displayEmployeeMenu() {
-        boolean check = true;
-        while (check) {
-            System.out.println("1. Display list employees");
-            System.out.println("2. Add new employee");
-            System.out.println("3. Edit employee");
-            System.out.println("4. Return main menu");
-        }
-    }
 
     public static void displayCustomerMenu() {
         boolean check = true;
@@ -90,5 +81,13 @@ public class FuramaController {
             System.out.println("2. Display list customers get voucher");
             System.out.println("3. Return main menu");
         }
+    }
+
+    public Iterable<Object> getAll() {
+        return null;
+    }
+
+    public void save(Employee employee) {
+
     }
 }
